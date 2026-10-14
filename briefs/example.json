@@ -1,0 +1,24 @@
+{
+  "id": "how-orbits-work",
+  "title": "Why Satellites Don't Fall Down",
+  "topic": "An orbit is continuous free fall around Earth",
+  "platform": "shorts",
+  "duration": 30,
+  "fps": 30,
+  "style": "Cinematic science explainer with orbital diagrams, midnight blue, warm sunlight, precise kinetic type",
+  "category": "science",
+  "output": "mp4",
+  "scenes": [
+    {"start": 0, "end": 5, "title": "Always falling.", "description": "Reveal Earth and a satellite with a striking curved trajectory."},
+    {"start": 5, "end": 14, "title": "Moving sideways.", "description": "Animate gravity and velocity vectors; bend the trajectory around the planet."},
+    {"start": 14, "end": 24, "title": "Missing the ground.", "description": "Track the satellite while the curved Earth falls away beneath it."},
+    {"start": 24, "end": 30, "title": "That's an orbit.", "description": "Pull back into a beautiful orbital loop and echo the opening image."}
+  ],
+  "narration": [
+    {"start": 0.3, "end": 4.8, "text": "Satellites are falling. All the time."},
+    {"start": 5.2, "end": 13.8, "text": "Gravity pulls them inward, while their sideways motion carries them forward."},
+    {"start": 14.2, "end": 23.8, "text": "They move fast enough that Earth's curved surface keeps falling away beneath them."},
+    {"start": 24.2, "end": 29.7, "text": "Always falling. Always missing the ground. That's an orbit."}
+  ],
+  "audio": {"narration": null, "music": null, "effects": null}
+}

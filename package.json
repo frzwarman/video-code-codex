@@ -1,0 +1,43 @@
+{
+  "name": "signal-video-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A personal, deterministic video production repository.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "preview": "remotion studio src/index.ts",
+    "new": "node scripts/create-video.mjs",
+    "register": "node scripts/register.mjs",
+    "render": "node scripts/render.mjs",
+    "render:all": "node scripts/render.mjs --all-formats",
+    "stills": "node scripts/render.mjs --stills",
+    "validate": "node scripts/validate.mjs",
+    "audio": "node scripts/create-audio.mjs",
+    "captions": "node scripts/captions.mjs",
+    "check": "tsc --noEmit && node --test tests/*.test.mjs",
+    "compositions": "remotion compositions src/index.ts"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.8.1",
+    "@remotion/bundler": "4.0.535",
+    "@remotion/cli": "4.0.535",
+    "@remotion/renderer": "4.0.535",
+    "@remotion/three": "4.0.535",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.535",
+    "three": "0.186.1",
+    "@react-three/drei": "10.7.9"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.186.0",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

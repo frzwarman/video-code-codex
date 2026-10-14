@@ -1,0 +1,31 @@
+{
+  "id": "message-journey",
+  "title": "What Happens When You Send a Message?",
+  "topic": "A simplified journey of a message through the internet",
+  "platform": "shorts",
+  "duration": 30,
+  "fps": 30,
+  "style": "Cinematic technical editorial. Midnight, mint, electric blue. Macro-to-network scale changes, confident kinetic type, luminous packet choreography.",
+  "category": "technology",
+  "output": "mp4",
+  "scenes": [
+    {"start": 0, "end": 3.5, "title": "After send", "description": "A luminous send symbol emerges inside a radar-like field. Large type asks what happens after send."},
+    {"start": 3.5, "end": 7, "title": "One small tap", "description": "A tilted, machined smartphone. A message bubble lifts off its screen."},
+    {"start": 7, "end": 11, "title": "Words become packets", "description": "The bubble becomes a grid of numbered data packets, then disperses into paths."},
+    {"start": 11, "end": 17, "title": "Find a route", "description": "Camera orbits a three-dimensional constellation of network nodes while packets trace a highlighted route."},
+    {"start": 17, "end": 21.5, "title": "Across the network", "description": "Track a glowing packet through a geometric network tunnel."},
+    {"start": 21.5, "end": 26, "title": "Back into words", "description": "Data packets converge into a second phone. The original message appears, delivered."},
+    {"start": 26, "end": 30, "title": "A massive journey", "description": "Two points connect, becoming one glowing conversation mark. Closing phrase and an iris collapse."}
+  ],
+  "narration": [
+    {"start": 0.4, "end": 3.35, "text": "What happens when you send a message?"},
+    {"start": 3.7, "end": 6.8, "text": "One tap starts an invisible journey."},
+    {"start": 7.2, "end": 10.7, "text": "Your words become data, carried in packets."},
+    {"start": 11.25, "end": 14.2, "text": "Routers pass them across connected networks."},
+    {"start": 14.3, "end": 16.8, "text": "Each hop brings them closer."},
+    {"start": 17.2, "end": 21.1, "text": "Signals race through cables, fiber, and radio links."},
+    {"start": 21.75, "end": 25.7, "text": "At the other end, the data becomes your message again."},
+    {"start": 26.2, "end": 29.7, "text": "A tiny message. A massive journey."}
+  ],
+  "audio": {"narration": null, "music": "audio/message-journey-score.wav", "effects": "audio/message-journey-effects.wav"}
+}
