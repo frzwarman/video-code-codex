@@ -1,0 +1,24 @@
+{
+  "id":"coffee-effects", "title":"What Happens Inside Your Body When You Drink Coffee?", "topic":"Caffeine, adenosine signaling, and perceived alertness", "platform":"shorts", "duration":45, "fps":60, "style":"AFTER THE SIP: tactile ivory ceramic and espresso bronze give way to immersive cyan scientific cinematography. Full-bleed 3D, deliberate lens travel, editorial type, warm-to-cool continuity.", "category":"science", "output":"mp4",
+  "scenes":[
+    {"start":0,"end":4,"title":"Your brain on coffee","description":"Extreme coffee macro pulls to ceramic cup and rising droplet; typography flips from YOUR BRAIN to ON COFFEE; dive through the liquid."},
+    {"start":4,"end":10,"title":"A molecule enters","description":"Bronze liquid tunnel resolves into a scientifically grounded caffeine molecule; formula appears; camera tracks the molecule into cool fluid."},
+    {"start":10,"end":16,"title":"In the bloodstream","description":"Camera flies between biconcave blood cells inside an organic vessel, following caffeine toward a bright opening."},
+    {"start":16,"end":23,"title":"Blocking adenosine","description":"Detailed human brain orbit becomes a neural close-up, then a stylized seven-helix receptor. Caffeine docks; adenosine cannot occupy the same site."},
+    {"start":23,"end":31,"title":"Less sleepy, more alert","description":"Camera travels through the occupied receptor into a neural forest. Restrained activation and an editorial type transformation explain perceived alertness."},
+    {"start":31,"end":39,"title":"The effect fades","description":"Orbital clock and conceptual decay curve. Molecules leave gradually. Sleep pressure remains. Clearance varies by person."},
+    {"start":39,"end":45,"title":"It masks the signal","description":"Circular scientific motif match-cuts to coffee surface. Pull back to cup. Final typography collapses into the warm opening macro for a loop."}
+  ],
+  "narration":[
+    {"start":0.15,"end":3.8,"text":"What really happens inside your body when you drink coffee?"},
+    {"start":4.25,"end":9.4,"text":"After you drink it, caffeine is absorbed into your bloodstream."},
+    {"start":10.2,"end":15.5,"text":"It travels through your blood and eventually reaches your brain."},
+    {"start":16.15,"end":22.8,"text":"Inside your brain, caffeine blocks receptors for a chemical called adenosine."},
+    {"start":23.1,"end":26.5,"text":"Adenosine normally helps build sleep pressure."},
+    {"start":26.65,"end":30.7,"text":"By blocking its signals, caffeine can make you feel more alert."},
+    {"start":31.15,"end":34.45,"text":"But caffeine doesn’t remove the need for sleep."},
+    {"start":34.6,"end":38.7,"text":"As your body breaks it down, its effects gradually fade."},
+    {"start":39.15,"end":44.5,"text":"So that energy boost? You’re mostly feeling less of your brain’s sleepiness signal."}
+  ],
+  "audio":{"narration":null,"music":"coffee/score.wav","effects":"coffee/effects.wav"}
+}

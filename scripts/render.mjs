@@ -42,7 +42,7 @@ try {
     let previous = -1;
     console.log(`Rendering ${composition.id}: ${composition.durationInFrames} frames, ${composition.width}×${composition.height}, ${composition.fps} fps, ${presetName}`);
     const started = Date.now();
-    await renderMedia({...common, outputLocation, codec: 'h264', audioCodec: 'aac', audioBitrate: '192k', pixelFormat: 'yuv420p', enforceAudioTrack: true, crf: preset.crf, scale: preset.scale, jpegQuality: preset.jpegQuality, concurrency: preset.concurrency, imageFormat: 'jpeg', x264Preset: 'medium', onProgress: ({progress}) => {const p = Math.floor(progress * 20);if (p > previous) {console.log(`${p * 5}%`);previous = p;}}});
+    await renderMedia({...common, outputLocation, codec: 'h264', audioCodec: 'aac', audioBitrate: '192k', pixelFormat: 'yuv420p', colorSpace: 'bt709', enforceAudioTrack: true, crf: preset.crf, scale: preset.scale, jpegQuality: preset.jpegQuality, concurrency: preset.concurrency, imageFormat: 'jpeg', x264Preset: 'medium', onProgress: ({progress}) => {const p = Math.floor(progress * 20);if (p > previous) {console.log(`${p * 5}%`);previous = p;}}});
     const expected = {...settings, width: Math.round(settings.width * preset.scale), height: Math.round(settings.height * preset.scale)};
     const manifest = {id: composition.id, preset: presetName, inputProps, expected, renderedAt: new Date().toISOString(), elapsedSeconds: (Date.now() - started) / 1000, narration: brief.audio.narration ? 'supplied recording' : 'not recorded', audio: brief.audio};
     fs.writeFileSync(path.join(dir, `${base}.render.json`), JSON.stringify(manifest, null, 2) + '\n');

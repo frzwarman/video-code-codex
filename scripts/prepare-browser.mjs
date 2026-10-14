@@ -8,6 +8,7 @@ import {registerVideos} from './register.mjs';
 // Uses the same Remotion 4.0.535 bundle/seek handshake as the renderer.
 const o = args(); const brief = loadBrief(o._[0]); const settings = renderSettings(brief, o);
 const quality = o.preset || 'final';
+if (quality !== 'final') throw Error('The browser fallback captures native-resolution final frames. Use the standard renderer for preview exports.');
 registerVideos();
 const dir = path.join(root, '.cache/browser-bundle');
 await bundle({entryPoint: path.join(root, 'src/index.ts'), outDir: dir, publicDir: path.join(root, 'public')});

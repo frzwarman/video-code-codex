@@ -27,5 +27,5 @@
     {"start": 21.75, "end": 25.7, "text": "At the other end, the data becomes your message again."},
     {"start": 26.2, "end": 29.7, "text": "A tiny message. A massive journey."}
   ],
-  "audio": {"narration": null, "music": "audio/message-journey-score.wav", "effects": "audio/message-journey-effects.wav"}
+  "audio": {"narration": "audio/message-journey-narration.wav", "music": "audio/message-journey-score.wav", "effects": "audio/message-journey-effects.wav"}
 }

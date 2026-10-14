@@ -38,12 +38,12 @@ function sweep(at, seconds, gain, reverse = false) {
 [5.45, 7.5, 7.62, 7.74, 7.86, 12.4, 13.5, 14.6, 15.7].forEach((t, i) => tone(effects, t, 0.4, 650 + i * 70, 0.085, Math.sin(i) * 0.4));
 tone(effects, 23, 1.3, 880, 0.15, -0.15); tone(effects, 23.13, 1.5, 1174.66, 0.12, 0.15);
 tone(effects, 26.3, 2.8, 523.25, 0.14, -0.2, 'pad'); tone(effects, 26.5, 2.8, 783.99, 0.1, 0.2, 'pad');
-function writeWav(name, track) {
+function writeWav(name, track, targetPeak) {
   let peak = 0; for (let i = 0; i < length; i++) peak = Math.max(peak, Math.abs(track[0][i]), Math.abs(track[1][i]));
-  const normalization = peak > 0.65 ? 0.65 / peak : 1;
+  const normalization = peak ? targetPeak / peak : 1;
   const buffer = Buffer.alloc(44 + length * 4);
   buffer.write('RIFF', 0);buffer.writeUInt32LE(buffer.length - 8, 4);buffer.write('WAVEfmt ', 8);buffer.writeUInt32LE(16, 16);buffer.writeUInt16LE(1, 20);buffer.writeUInt16LE(2, 22);buffer.writeUInt32LE(rate, 24);buffer.writeUInt32LE(rate * 4, 28);buffer.writeUInt16LE(4, 32);buffer.writeUInt16LE(16, 34);buffer.write('data', 36);buffer.writeUInt32LE(length * 4, 40);
   for (let i = 0; i < length; i++) {const fade = Math.min(1, i / rate, (length - 1 - i) / (rate * 1.2));for (let c = 0; c < 2; c++) buffer.writeInt16LE(Math.round(Math.max(-1, Math.min(1, track[c][i] * normalization * fade)) * 32767), 44 + i * 4 + c * 2);}
   const output = path.join(root, 'public/audio', name);fs.mkdirSync(path.dirname(output), {recursive: true});fs.writeFileSync(output, buffer);console.log(`${name}: original stereo synthesis, 48kHz, 30s, peak ${(20 * Math.log10(peak * normalization)).toFixed(1)} dBFS`);
 }
-writeWav('message-journey-score.wav', score); writeWav('message-journey-effects.wav', effects);
+writeWav('message-journey-score.wav', score, 0.55); writeWav('message-journey-effects.wav', effects, 0.35);
