@@ -1,0 +1,27 @@
+{
+  "scope": "Source and audio only; user deferred all video and image rendering",
+  "codeCheck": "npm run check: TypeScript and all 5 tests passed",
+  "briefsMatch": true,
+  "contiguousScenes": 11,
+  "plannedDurationSeconds": 65,
+  "plannedFrames": 3900,
+  "narrationAsset": null,
+  "narrationWords": 138,
+  "plannedWordsPerMinuteByCue": [147, 84, 115, 133, 114, 160, 168, 135, 104, 146, 155],
+  "captionCharacters": 120,
+  "audio": {
+    "sourceFormat": "Stereo PCM16 WAV, 48000 Hz, 65 seconds per track",
+    "blackouts": "All three 8-frame intervals contain zero-valued samples in both tracks",
+    "analysis": "FFmpeg ebur128 peak=true, music gain 0.85 and effects gain 0.7, unnormalized mix",
+    "truePeakDbFS": -6.0,
+    "integratedLoudnessLUFS": -23.9,
+    "encodedAACPeak": null
+  },
+  "pending": [
+    "User decision to render",
+    "Visual inspection and refinement",
+    "Recorded narration alignment when supplied",
+    "Preview, cover, final MP4 and encoded contact sheet",
+    "Final media metadata and encoded audio verification"
+  ]
+}

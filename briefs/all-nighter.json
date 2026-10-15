@@ -78,63 +78,63 @@
   ],
   "narration": [
     {
-      "start": 0.08,
-      "end": 3.35,
+      "start": 0.03,
+      "end": 3.78,
       "text": "An all-nighter can impair your reactions like alcohol."
     },
     {
-      "start": 3.58,
-      "end": 7.85,
+      "start": 3.83,
+      "end": 6.92,
       "text": "Here’s what happens, hour by hour."
     },
     {
-      "start": 8.08,
-      "end": 14.85,
+      "start": 8.05,
+      "end": 13.45,
       "text": "Hour sixteen. Adenosine has been building all day, increasing the pressure to sleep."
     },
     {
-      "start": 15.08,
-      "end": 21.85,
+      "start": 15.05,
+      "end": 22.15,
       "text": "By seventeen to nineteen hours, some test performance resembles point zero five percent blood alcohol."
     },
     {
-      "start": 22.08,
-      "end": 27.85,
+      "start": 22.2,
+      "end": 27.63,
       "text": "Microsleeps can happen: brief, involuntary sleep you might not even notice."
     },
     {
-      "start": 28.08,
-      "end": 34.85,
+      "start": 28.05,
+      "end": 35.84,
       "text": "At twenty-four hours, one study found performance like point one percent blood alcohol. Above most US driving limits."
     },
     {
-      "start": 35.08,
-      "end": 41.85,
+      "start": 35.89,
+      "end": 43.46,
       "text": "Through the next day: at thirty-five hours, one study found about sixty percent greater amygdala reactivity to negative images."
     },
     {
-      "start": 42.08,
-      "end": 47.85,
+      "start": 43.51,
+      "end": 48.57,
       "text": "A small study also found higher ghrelin and hunger after one sleepless night."
     },
     {
-      "start": 48.08,
-      "end": 53.85,
+      "start": 48.62,
+      "end": 53.28,
       "text": "Coffee blocks adenosine’s signal. The sleep pressure is still there."
     },
     {
-      "start": 54.08,
-      "end": 59.85,
+      "start": 54.05,
+      "end": 60.24,
       "text": "Recovery sleep helps. One long night can restore alertness, but some effects take longer."
     },
     {
-      "start": 60.08,
-      "end": 64.35,
+      "start": 60.29,
+      "end": 64.24,
       "text": "What’s the longest you’ve stayed awake? Tell me in the comments."
     }
   ],
   "audio": {
-    "narration": null,
+    "narration": "all-nighter/narration.wav",
     "music": "all-nighter/score.wav",
     "effects": "all-nighter/effects.wav"
   }
