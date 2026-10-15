@@ -1,0 +1,13 @@
+WHY YOUR KNUCKLES CRACK — KINETIC LAB
+Original choreography, typography, procedural capsule/fluid/cavity and synthesized soundtrack created for video-code-codex.
+
+Human hand: WebXR Input Profiles generic-hand/right.glb, immersive-web contributors (standard hand models contributed by Meta). MIT License, Copyright 2019 Amazon.com, Inc. or its affiliates. Source: https://github.com/immersive-web/webxr-input-profiles/tree/main/packages/assets/profiles/generic-hand . Full notice in licenses/WebXR-MIT.txt. Modified: material, mirrored left instance, runtime skeleton hierarchy and poses.
+
+Hand bones: BodyParts3D, © The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan. STL conversion: Kevin Mattheus Moerman. Source: https://github.com/Kevin-Mattheus-Moerman/BodyParts3D . License: https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en . Modified: selected 27 right-hand bones, vertex merge and 55% vertex reduction, smoothed normals, transformed coordinates, GLB conversion, index MCP extraction, animated separation, materials. Full source hashes and per-bone changes in asset-manifest.json. Adapted GLBs and the combined film: CC BY-SA 2.1 Japan. No endorsement implied. Unrelated repository code/videos are not relicensed.
+
+Inter: Rasmus Andersson, SIL OFL 1.1; bundled license in public/fonts.
+Libre Baskerville Italic: Copyright 2012 The Libre Baskerville Project Authors, Reserved Font Name Libre Baskerville. SIL OFL 1.1. Source: https://github.com/google/fonts/tree/main/ofl/librebaskerville . Full notice in public/fonts/LibreBaskerville-OFL.txt.
+
+Science: Kawchuk et al. (2015), Real-Time Visualization of Joint Cavitation, PLOS ONE, https://doi.org/10.1371/journal.pone.0119470 . MRI-style imagery is a reconstruction, not research footage. Donald Unger's 2009 Ig Nobel citation: https://improbable.com/ig/winners/#ig2009 . One person's experiment is not proof. Reset timing is approximate and the reset animation is conceptual.
+
+Narration not recorded. All sound is original procedural synthesis, without external samples.

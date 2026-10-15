@@ -164,6 +164,12 @@
       "type": "file"
     },
     {
+      "path": "src/videos/showreel/kit.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1792033648524,
+      "type": "file"
+    },
+    {
       "path": "out/review/mj-voiced-encoded.png",
       "accessCount": 1,
       "lastAccessed": 1791999171505,
@@ -173,6 +179,60 @@
       "path": "out/review/coffee-voiced-encoded.png",
       "accessCount": 1,
       "lastAccessed": 1791999385470,
+      "type": "file"
+    },
+    {
+      "path": "briefs/showreel.json",
+      "accessCount": 1,
+      "lastAccessed": 1792033446817,
+      "type": "file"
+    },
+    {
+      "path": "scripts/create-showreel-audio.mjs",
+      "accessCount": 1,
+      "lastAccessed": 1792033489684,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/showreel/Shots.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792033648847,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/showreel/Shots3D.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792033698013,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/showreel/Video.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792033711814,
+      "type": "file"
+    },
+    {
+      "path": "out/showreel/stills-sheet.png",
+      "accessCount": 1,
+      "lastAccessed": 1792033737859,
+      "type": "file"
+    },
+    {
+      "path": "out/showreel/stills-sheet2.png",
+      "accessCount": 1,
+      "lastAccessed": 1792033791357,
+      "type": "file"
+    },
+    {
+      "path": "out/showreel/encoded-sheet.png",
+      "accessCount": 1,
+      "lastAccessed": 1792033893363,
+      "type": "file"
+    },
+    {
+      "path": "out/knuckle-crack/review/voiced-contact-sheet.png",
+      "accessCount": 1,
+      "lastAccessed": 1792048915335,
       "type": "file"
     }
   ],

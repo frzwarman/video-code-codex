@@ -1,0 +1,67 @@
+{
+  "id": "showreel",
+  "title": "Claude — Motion Reel 2026",
+  "topic": "A 15-second motion design showreel demonstrating range: kinetic type, variable type, 3D, systems, particles, interface, fluid",
+  "platform": "youtube",
+  "duration": 15,
+  "fps": 60,
+  "style": "Editorial reel. Ink #08080A, bone #F2EEE6, one hot accent #FF4A1C, violet rim light #7B6CFF. Inter variable 100–900, italic serif asides. Hard cuts on a 120 BPM grid, velocity-driven directional blur, timecode HUD and crop marks.",
+  "category": "satisfying",
+  "output": "mp4",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 2,
+      "title": "01 Kinetic",
+      "description": "MOTION slams in letter by letter on eighth notes, each with a different mechanic and velocity blur. Accent bar wipe exits."
+    },
+    {
+      "start": 2,
+      "end": 4,
+      "title": "02 Type",
+      "description": "Bone background. BREATHE: a weight and tracking wave rolls through the letters. Italic serif aside. Slice-mask exit."
+    },
+    {
+      "start": 4,
+      "end": 6,
+      "title": "03 Depth",
+      "description": "Chrome torus knot and satellites under studio reflections, violet and orange rim lights. DEPTH sits behind and in front of the object."
+    },
+    {
+      "start": 6,
+      "end": 7.5,
+      "title": "04 Systems",
+      "description": "A 16×9 tile grid. A radial wave turns squares into circles and flips them to the accent color."
+    },
+    {
+      "start": 7.5,
+      "end": 9.5,
+      "title": "05 Particles",
+      "description": "Thousands of points morph from a sphere into the word FLOW, then burst outward."
+    },
+    {
+      "start": 9.5,
+      "end": 11,
+      "title": "06 Interface",
+      "description": "Perspective UI cards stack in. A line chart draws, a counter climbs, a cursor clicks."
+    },
+    {
+      "start": 11,
+      "end": 12.5,
+      "title": "07 Fluid",
+      "description": "Gooey accent metaballs orbit, merge and collapse into one dot."
+    },
+    {
+      "start": 12.5,
+      "end": 15,
+      "title": "08 Signature",
+      "description": "The dot opens to black. CLAUDE, Motion Designer, discipline index, accent underline hit, hold."
+    }
+  ],
+  "narration": [],
+  "audio": {
+    "narration": null,
+    "music": "audio/showreel-score.wav",
+    "effects": "audio/showreel-effects.wav"
+  }
+}

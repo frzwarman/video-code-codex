@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {STLLoader} from 'three/addons/loaders/STLLoader.js';
+import {SimplifyModifier} from 'three/addons/modifiers/SimplifyModifier.js';
+import {mergeVertices} from 'three/addons/utils/BufferGeometryUtils.js';
+import {Box3,Vector3,Quaternion} from 'three';
+const dir='public/knuckle-crack';
+const parts=JSON.parse(fs.readFileSync(`${dir}/source/parts.json`));
+const records=[];const geometries=[];const bounds=new Box3();
+for(const [id,name] of parts){const bytes=fs.readFileSync(`${dir}/source/${id}.stl`);let g=new STLLoader().parse(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.length));g.deleteAttribute('normal');g=mergeVertices(g,0.001);const before=g.index.count/3;g=await new SimplifyModifier().modify(g,Math.floor(g.attributes.position.count*.55));g.computeVertexNormals();g.computeBoundingBox();bounds.union(g.boundingBox);geometries.push({id,name,g});records.push({id,name,source:`https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/${id}.stl`,sha256:crypto.createHash('sha256').update(bytes).digest('hex'),trianglesBefore:before,trianglesAfter:g.index.count/3});}
+function writeGlb(name,meshes){const chunks=[],views=[],accessors=[],gMeshes=[],nodes=[];let offset=0;
+ const attribute=(array,type,componentType,min,max)=>{const b=Buffer.from(array.buffer,array.byteOffset,array.byteLength);chunks.push(b);const pad=(4-b.length%4)%4;if(pad)chunks.push(Buffer.alloc(pad));views.push({buffer:0,byteOffset:offset,byteLength:b.length});offset+=b.length+pad;accessors.push({bufferView:views.length-1,componentType,count:array.length/(type==='VEC3'?3:1),type,...(min?{min,max}:{})});return accessors.length-1;};
+ for(const {id,g} of meshes){g.computeBoundingBox();const position=attribute(g.attributes.position.array,'VEC3',5126,g.boundingBox.min.toArray(),g.boundingBox.max.toArray());const normal=attribute(g.attributes.normal.array,'VEC3',5126);const index=attribute(new Uint32Array(g.index.array),'SCALAR',5125);gMeshes.push({name:id,primitives:[{attributes:{POSITION:position,NORMAL:normal},indices:index,material:0}]});nodes.push({name:id,mesh:gMeshes.length-1});}
+ const j={asset:{version:'2.0',generator:'knuckle-crack source-preserving conversion',copyright:'BodyParts3D © The Database Center for Life Science; STL conversion Kevin Mattheus Moerman; CC BY-SA 2.1 Japan'},scene:0,scenes:[{nodes:nodes.map((_,i)=>i)}],nodes,meshes:gMeshes,materials:[{pbrMetallicRoughness:{baseColorFactor:[.95,.94,.9,1],metallicFactor:0,roughnessFactor:.42}}],buffers:[{byteLength:offset}],bufferViews:views,accessors};let json=Buffer.from(JSON.stringify(j));json=Buffer.concat([json,Buffer.alloc((4-json.length%4)%4,32)]);const binary=Buffer.concat(chunks);const header=Buffer.alloc(20);header.writeUInt32LE(0x46546c67,0);header.writeUInt32LE(2,4);header.writeUInt32LE(28+json.length+binary.length,8);header.writeUInt32LE(json.length,12);header.writeUInt32LE(0x4e4f534a,16);const bh=Buffer.alloc(8);bh.writeUInt32LE(binary.length,0);bh.writeUInt32LE(0x004e4942,4);fs.writeFileSync(`${dir}/${name}.glb`,Buffer.concat([header,json,bh,binary]));
+}
+const center=bounds.getCenter(new Vector3());
+writeGlb('hand-bones',geometries.map(({id,g})=>{const out=g.clone();const p=out.attributes.position;for(let i=0;i<p.count;i++)p.setXYZ(i,(p.getX(i)-center.x)/25,-(p.getZ(i)-center.z)/25,(p.getY(i)-center.y)/25);out.computeVertexNormals();return{id,g:out};}));
+const meta=geometries.find(x=>x.id==='FMA24466').g,prox=geometries.find(x=>x.id==='FMA24451').g;
+const cap=(g,upper)=>{const p=g.attributes.position,z=upper?g.boundingBox.max.z:g.boundingBox.min.z,v=new Vector3();let n=0;for(let i=0;i<p.count;i++)if(Math.abs(p.getZ(i)-z)<5){v.add(new Vector3(p.getX(i),p.getY(i),p.getZ(i)));n++;}return v.divideScalar(n);};
+const joint=cap(meta,false).add(cap(prox,true)).multiplyScalar(.5);const axis=prox.boundingBox.getCenter(new Vector3()).sub(meta.boundingBox.getCenter(new Vector3())).normalize();const q=new Quaternion().setFromUnitVectors(axis,new Vector3(0,1,0));
+writeGlb('index-mcp',geometries.filter(x=>['FMA24466','FMA24451'].includes(x.id)).map(({id,g})=>{const out=g.clone();out.translate(-joint.x,-joint.y,-joint.z);out.applyQuaternion(q);out.scale(.1,.1,.1);out.computeVertexNormals();return{id,g:out};}));
+fs.writeFileSync(`${dir}/asset-manifest.json`,JSON.stringify({license:'CC BY-SA 2.1 Japan',changes:'STL to GLB; 55% vertex decimation; smooth normals; centered and reoriented; separate index MCP pair',records},null,2));
+console.log(JSON.stringify({bones:records.length,before:records.reduce((n,r)=>n+r.trianglesBefore,0),after:records.reduce((n,r)=>n+r.trianglesAfter,0),center:center.toArray(),joint:joint.toArray()},null,2));

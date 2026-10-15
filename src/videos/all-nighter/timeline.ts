@@ -1,0 +1,12 @@
+import {interpolate} from 'remotion';
+import {clamp,smooth} from '../../motion';
+import timing from './timing.json';
+export {timing};
+export const C={navy:'#0A0F1E',amber:'#FFB547',dawn:'#E8F1FF',red:'#FF3B30'};
+export const ramp=(t:number,a:number,b:number)=>smooth(clamp((t-a)/(b-a)));
+export const sceneAt=(t:number)=>Math.max(0,Math.min(10,timing.cuts.findIndex((a,i)=>t>=a&&t<timing.cuts[i+1])));
+export const hoursAt=(t:number)=>t<3.5||t>=timing.loopCoverAt?24:t<8?Math.round(16*ramp(t,3.5,7.3)):t<15?16:t<22?19:t<28?Math.floor(interpolate(t,[22,28],[20,24])):t<35?24:t<54?35:0;
+export const impairment=(t:number)=>t<8||t>=54?0:interpolate(t,[8,15,22,28,35,48,54],[.05,.2,.42,.65,1,1,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
+export const blackout=(frame:number)=>timing.microsleeps.some(m=>frame>=m.frame&&frame<m.frame+m.length);
+export const afterSleep=(frame:number)=>timing.microsleeps.some(m=>frame>=m.frame+m.length&&frame<m.frame+m.length+45);
+export type V3=[number,number,number];

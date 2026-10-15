@@ -1,0 +1,34 @@
+import React from 'react';
+import {AbsoluteFill,useVideoConfig} from 'remotion';
+import {useStoryTime} from '../../motion';
+import {AudioTracks} from '../../components/AudioTracks';
+import type {VideoProps} from '../../types';
+import brief from './brief.json';
+import './fonts';
+import {P,cuts,sceneAt,ramp,holdTime} from './timeline';
+import {World} from './World';
+import {Slam,Aside,Chip,Whip,Gauge} from './Graphics';
+
+export const Video:React.FC<VideoProps>=props=>{
+ const t=useStoryTime(62),s=sceneAt(t),local=t-cuts[s],pose=holdTime(t),{width,height}=useVideoConfig();const paper=[1,2,4,6,7].includes(s);const color=paper?P.ink:P.paper;const cue=brief.narration.find(c=>t>=c.start&&t<c.end);const ending=t>=61.5;
+ return <AbsoluteFill style={{background:paper?P.paper:P.ink,fontFamily:'Inter',color,overflow:'hidden'}}>
+ <World time={pose} scene={s} quality={props.quality} paper={paper}/>
+ <div style={{position:'absolute',width:1080,height:1920,transform:`scale(${width/1080},${height/1920})`,transformOrigin:'top left'}}>
+ <div style={{position:'absolute',top:105,left:80,fontSize:22,fontWeight:700,letterSpacing:4}}>KINETIC LAB <span style={{opacity:.4}}> / 002</span></div>
+ <div style={{position:'absolute',top:105,right:100,fontSize:18,fontFamily:'monospace',opacity:.5}}>62″ / ANATOMY</div>
+ {s===0&&<><Slam lines={['POP.']} age={local-.4} size={260} top={235} color={P.red} initial={local<.4}/><Aside top={555} color={color}>a tiny sound. a very strange reason.</Aside></>}
+ {s===1&&<><Slam lines={local<2.5?['NOT YOUR','BONES.']:['NOT','SNAPPING.']} key={local<2.5?'bones':'snapping'} age={local<2.5?local:local-2.5} size={local<2.5?160:175} top={205} color={color}/><Aside top={1450} color={color}>nothing is grinding.</Aside><div style={{position:'absolute',left:770,top:700,fontSize:160,color:P.red,fontWeight:900,transform:`rotate(${-12+ramp(local,.3,.7)*8}deg) scale(${ramp(local,.2,.45)})`}}>×</div></>}
+ {s===2&&<><Slam lines={local<2.5?['INSIDE.']:local<5?['SEALED.']:['SLIPPERY.']} key={Math.floor(local/2.5)} age={local%2.5} size={local<5?200:175} top={225} color={color}/><Aside top={460} color={color}>meet your metacarpophalangeal joint.</Aside><Chip top={765}>CAPSULE ↘</Chip><Chip top={1230} left={730} red>↖ FLUID</Chip><div style={{position:'absolute',left:95,top:1510,fontSize:22,opacity:.6}}>INDEX MCP / STYLIZED CUTAWAY</div></>}
+ {s===3&&<><Slam lines={local<2.5?['PULL.']:local<5?['SEPARATE.']:['PRESSURE','↓']} key={Math.floor(local/2.5)} age={local%2.5} size={local<5?local<2.5?240:155:170} top={215} color={color}/><Aside top={600} color={color}>{local<2.5?'a little traction.':local<5?'the joint surfaces move apart.':'the pressure drops fast.'}</Aside>{local>=2.5&&<Gauge p={ramp(t,18.5,24)} paper={paper}/>}</>}
+ {s===4&&<><Slam lines={local<3?['THAT’S','THE POP.']:local<5.5?['A GAS','CAVITY.']:['FORMS.']} key={local<3?'pop':local<5.5?'gas':'forms'} age={local<3?Math.max(0,local-.5):local<5.5?local-3:local-5.5} size={local<3?170:local<5.5?190:220} top={220} color={color}/><Aside top={1460} color={color}>{local<5.5?'a cavity forms in the fluid.':'formation — not a bubble bursting.'}</Aside>{t>=25.5&&t<26.5&&<div style={{position:'absolute',left:540,top:970,width:100+800*ramp(t,25.5,26.4),height:100+800*ramp(t,25.5,26.4),border:`${10*(1-ramp(t,25.5,26.4))}px solid ${P.red}`,borderRadius:'50%',transform:'translate(-50%,-50%)',opacity:1-ramp(t,25.6,26.5)}}/>}</>}
+ {s===5&&<><Slam lines={local<2.5?['2015']:local<5?['CAUGHT.']:['ON CAMERA.']} key={Math.floor(local/2.5)} age={local%2.5} size={local<5?230:140} top={230} color={color}/><Chip top={570} dark red>REAL-TIME MRI</Chip><div style={{position:'absolute',top:790,left:145,width:770,height:480,border:`2px solid ${P.paper}`,background:'repeating-linear-gradient(0deg,transparent,transparent 5px,#ffffff13 6px)',boxShadow:'inset 0 0 100px #0008'}}><div style={{position:'absolute',top:local*40%470,width:'100%',height:2,background:P.paper,opacity:.6}}/><span style={{position:'absolute',right:15,bottom:15,fontFamily:'monospace',fontSize:18}}>MCP / CAVITY PRESENT</span><span style={{position:'absolute',left:220+ramp(local,1,3)*180,top:170,fontSize:65}}>↖</span></div><Aside top={1380} color={color}>they watched the cavity appear.</Aside><div style={{position:'absolute',top:1460,left:90,fontSize:21,opacity:.7}}>MRI-STYLE RECONSTRUCTION · KAWCHUK ET AL., 2015</div></>}
+ {s===6&&<><Slam lines={[`${String(Math.max(0,20-Math.floor(local*2)*20/14)).split('.')[0].padStart(2,'0')} MIN`]} age={local} size={210} top={250} color={color}/><Aside top={505} color={color}>~20-minute reset · time compressed.</Aside><Chip top={720} red>RESETTING… {Math.min(99,Math.floor(local/7*100))}%</Chip><div style={{position:'absolute',top:1380,left:95,right:125,height:8,background:'#0b0b0c22'}}><div style={{height:8,width:`${local/7*100}%`,background:P.ink}}/></div><Aside top={1450} color={color}>{local<3?'another try? no second pop.':'a conceptual reset — time varies.'}</Aside></>}
+ {s===7&&<><div style={{position:'absolute',left:540,top:650,height:740,borderLeft:'1px solid #0b0b0c33'}}/><Slam lines={local<2.5?['ARTHRITIS?']:local<5?['60 YEARS.']:local<7.5?['ONE HAND.']:['NO ARTHRITIS.']} key={Math.floor(local/2.5)} age={local%2.5} size={local<2.5?150:local<7.5?175:127} top={235} color={color}/><Aside top={490} color={color}>Dr. Donald Unger’s personal experiment.</Aside><Chip top={1300} left={150}>LEFT: CRACKED ✓</Chip><Chip top={1300} left={590}>RIGHT: CONTROL ✓</Chip><div style={{position:'absolute',top:1395,left:85,right:110,textAlign:'center',fontWeight:850,fontSize:43}}>NEITHER HAND HAD ARTHRITIS.</div><Aside top={1470} color={color}>one person. interesting — not proof.</Aside></>}
+ {s===8&&<><Slam lines={ending?['POP.']:local<2.5?['SO…','CRACK AWAY.']:['WHAT’S','INSIDE YOU?']} key={ending?'pop':local<2.5?'crack':'inside'} age={ending?0:local%2.5} initial={ending} size={ending?260:local<2.5?135:165} top={ending?235:210} color={ending?P.red:color}/><Aside top={ending?555:1450} color={color}>{ending?'a tiny sound. a very strange reason.':local<2.5?'don’t force a painful joint.':'follow for the next tiny mystery.'}</Aside></>}
+ {props.captions&&cue&&<div style={{position:'absolute',left:85,right:125,bottom:230,padding:'17px 22px',textAlign:'center',fontSize:31,lineHeight:1.3,fontWeight:540,color,background:paper?'#f2f0ebe8':'#0b0b0ce8',borderTop:`1px solid ${paper?'#0b0b0c33':'#f2f0eb44'}`}}>{cue.text}</div>}
+ <div style={{position:'absolute',bottom:154,left:84,right:124,display:'flex',gap:7}}>{cuts.slice(0,-1).map((v,i)=><div key={v} style={{height:3,flex:1,background:paper?'#0b0b0c22':'#f2f0eb33'}}><div style={{height:3,width:`${ramp(ending?0:t,v,cuts[i+1])*100}%`,background:color}}/></div>)}</div>
+ </div>
+ {[3,8,16,25,33,41,48,57].map(at=><Whip key={at} time={t} at={at} paper={paper}/>)}
+ <AudioTracks brief={brief} enabled={props.audio} fadeInSeconds={0} fadeOutSeconds={.04}/>
+ </AbsoluteFill>;
+};

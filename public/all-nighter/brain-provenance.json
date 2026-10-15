@@ -1,0 +1,12 @@
+{
+  "asset": "public/coffee/brain.glb",
+  "author": "Innerscene, adapted from MakeHuman/MPFB CC0 assets",
+  "source": "https://www.innerscene.com/tools/library/3d-parts/brain-10d8f88f",
+  "download": "https://www.innerscene.com/api/library/brain-10d8f88f/download",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "verifiedOn": "2026-10-15",
+  "sha256": "03b3eb5393d88feaedd6113197b8d96aefced8e08893575a05a26590205f709b",
+  "verification": "Existing local GLB and a fresh source download have identical SHA-256. Embedded Brain node extras identify Innerscene original CC0 geometry and CC0-1.0. Publisher lists CC0 including commercial use.",
+  "modifications": "Original file unchanged. Runtime material, centering, uniform scaling and transparency only. Amygdala glow is an approximate schematic overlay, not segmented anatomy."
+}

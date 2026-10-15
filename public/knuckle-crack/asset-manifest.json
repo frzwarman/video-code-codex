@@ -1,0 +1,222 @@
+{
+  "license": "CC BY-SA 2.1 Japan",
+  "changes": "STL to GLB; 55% vertex decimation; smooth normals; centered and reoriented; separate index MCP pair",
+  "records": [
+    {
+      "id": "FMA23725",
+      "name": "right trapezoid",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA23725.stl",
+      "sha256": "db19cf9ed7c2e97266255c03615458913b8c970d3b6e44eb015a756e4c839e5c",
+      "trianglesBefore": 616,
+      "trianglesAfter": 278
+    },
+    {
+      "id": "FMA24435",
+      "name": "right scaphoid",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24435.stl",
+      "sha256": "106d5be5a72229257a9ba41a543a4f42d18eae0513b45e0cd21e8e34d62518b6",
+      "trianglesBefore": 1074,
+      "trianglesAfter": 484
+    },
+    {
+      "id": "FMA24437",
+      "name": "right lunate",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24437.stl",
+      "sha256": "4b35077cf6a5711e1dfdd39a07734d792f0c84ce19b3b8cc942e2ad4838ef8ea",
+      "trianglesBefore": 864,
+      "trianglesAfter": 390
+    },
+    {
+      "id": "FMA24439",
+      "name": "right triquetral",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24439.stl",
+      "sha256": "bb2139a7289e784de0ff2db5e1adcc9bd8f5c9c0d4418c0b885d379c97e8e319",
+      "trianglesBefore": 704,
+      "trianglesAfter": 318
+    },
+    {
+      "id": "FMA24441",
+      "name": "right pisiform",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24441.stl",
+      "sha256": "1357a32fd5fc1bb826a122dc67f5c795644516300ce53aae6e9b106da1997a19",
+      "trianglesBefore": 396,
+      "trianglesAfter": 178
+    },
+    {
+      "id": "FMA24443",
+      "name": "right trapezium",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24443.stl",
+      "sha256": "c28bb9f078fa7e1f164e549449c8025201a31965c47df0546476c84bb13cffaf",
+      "trianglesBefore": 1026,
+      "trianglesAfter": 462
+    },
+    {
+      "id": "FMA24446",
+      "name": "right capitate",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24446.stl",
+      "sha256": "4f717f2fba9b0cb432da64921d7aeaab2709d97129f39b6538c6ea147e68977d",
+      "trianglesBefore": 1284,
+      "trianglesAfter": 578
+    },
+    {
+      "id": "FMA24448",
+      "name": "right hamate",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24448.stl",
+      "sha256": "28fc3501dc45884187c91738d368194820d0fa8fc5c421cc40525e0c71665e7d",
+      "trianglesBefore": 1150,
+      "trianglesAfter": 518
+    },
+    {
+      "id": "FMA24450",
+      "name": "proximal phalanx of right thumb",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24450.stl",
+      "sha256": "12066c799d3468b5d697a87b6fcf0b35e71c68df5e030053ecdd3d39c2259dec",
+      "trianglesBefore": 1368,
+      "trianglesAfter": 614
+    },
+    {
+      "id": "FMA24451",
+      "name": "proximal phalanx of right index finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24451.stl",
+      "sha256": "29ac3a5b3459b99e81e4da835f4aa909b647f1fbb187423e53aa3e57315253ff",
+      "trianglesBefore": 1664,
+      "trianglesAfter": 750
+    },
+    {
+      "id": "FMA24452",
+      "name": "proximal phalanx of right middle finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24452.stl",
+      "sha256": "648823478862684fe11a5c647b02ae7892f634a3d56ff402c71b89e91aed33ec",
+      "trianglesBefore": 1968,
+      "trianglesAfter": 886
+    },
+    {
+      "id": "FMA24453",
+      "name": "proximal phalanx of right ring finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24453.stl",
+      "sha256": "3f36cfec72db8d90f89069910d0a1981c0e22b621fd4a7f9c6ad5d1517d2e15e",
+      "trianglesBefore": 1620,
+      "trianglesAfter": 730
+    },
+    {
+      "id": "FMA24454",
+      "name": "proximal phalanx of right little finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24454.stl",
+      "sha256": "bf7d8f3cd4dcc1bef6487551a87d703e5a6b2b5ce856bc8c941edd5e90519bc9",
+      "trianglesBefore": 1208,
+      "trianglesAfter": 544
+    },
+    {
+      "id": "FMA24455",
+      "name": "middle phalanx of right index finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24455.stl",
+      "sha256": "b44a016e7a7798587ad694405a65275931c904e3cf2d55dd64061cbecbabe2ab",
+      "trianglesBefore": 1140,
+      "trianglesAfter": 514
+    },
+    {
+      "id": "FMA24456",
+      "name": "middle phalanx of right middle finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24456.stl",
+      "sha256": "43d9601a373cf165c2e2bd604638186eda9ccded8f4418cc4aa382183cd5c2c2",
+      "trianglesBefore": 1476,
+      "trianglesAfter": 664
+    },
+    {
+      "id": "FMA24457",
+      "name": "middle phalanx of right ring finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24457.stl",
+      "sha256": "929519bef218c8e53a80751a46fa69ef3ac301b8dd278e3156d7600431618e85",
+      "trianglesBefore": 1350,
+      "trianglesAfter": 608
+    },
+    {
+      "id": "FMA24458",
+      "name": "middle phalanx of right little finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24458.stl",
+      "sha256": "d67f25f614d977663d141628d01bdefcd55b0624dc90b3aee91dc96abac1942f",
+      "trianglesBefore": 900,
+      "trianglesAfter": 406
+    },
+    {
+      "id": "FMA24459",
+      "name": "distal phalanx of right thumb",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24459.stl",
+      "sha256": "a9aa0c6acb7269cc5a81632a00b06ceb8a33cd2fe078634239da5a7f53ea1602",
+      "trianglesBefore": 1040,
+      "trianglesAfter": 466
+    },
+    {
+      "id": "FMA24460",
+      "name": "distal phalanx of right index finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24460.stl",
+      "sha256": "7f5f76eb2982eb79bbf51ed626f722abe0d8ceb6e678e433d6732a71187b61db",
+      "trianglesBefore": 656,
+      "trianglesAfter": 296
+    },
+    {
+      "id": "FMA24461",
+      "name": "distal phalanx of right middle finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24461.stl",
+      "sha256": "5a2321e130f03d57b18e6cc725c9129b8e8398385f06403d8e6228a3f959756a",
+      "trianglesBefore": 640,
+      "trianglesAfter": 288
+    },
+    {
+      "id": "FMA24462",
+      "name": "distal phalanx of right ring finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24462.stl",
+      "sha256": "9e14b18953b97f741d9ab5a0b05f786d6474cda29a13f06072d188b3ff978291",
+      "trianglesBefore": 452,
+      "trianglesAfter": 204
+    },
+    {
+      "id": "FMA24463",
+      "name": "distal phalanx of right little finger",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24463.stl",
+      "sha256": "520090dc80d537f973295acd49e070f3e094c4d5a48ef708e36a2b98a351d0d7",
+      "trianglesBefore": 466,
+      "trianglesAfter": 210
+    },
+    {
+      "id": "FMA24464",
+      "name": "right first metacarpal bone",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24464.stl",
+      "sha256": "5bca353b5b387b71fd6a9b3a588b08303a32cbf924a9c0bc7dc700024808624c",
+      "trianglesBefore": 2434,
+      "trianglesAfter": 1096
+    },
+    {
+      "id": "FMA24466",
+      "name": "right second metacarpal bone",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24466.stl",
+      "sha256": "3541c67a2864e4e72f56fe2a0c01aaa5d87346e55864e92a0360b32991892fe7",
+      "trianglesBefore": 3218,
+      "trianglesAfter": 1448
+    },
+    {
+      "id": "FMA24468",
+      "name": "right third metacarpal bone",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24468.stl",
+      "sha256": "f8d96b418c20308dc76868621875a3b029f9d6f072621efa37045dceb2730d5e",
+      "trianglesBefore": 3018,
+      "trianglesAfter": 1358
+    },
+    {
+      "id": "FMA24470",
+      "name": "right fourth metacarpal bone",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24470.stl",
+      "sha256": "5b9338a2d75680e92abbdc2c539d36ae8dd6f634ea3a026f2a6b33c071fb8e35",
+      "trianglesBefore": 2306,
+      "trianglesAfter": 1038
+    },
+    {
+      "id": "FMA24472",
+      "name": "right fifth metacarpal bone",
+      "source": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D/blob/main/assets/BodyParts3D_data/stl/FMA24472.stl",
+      "sha256": "4359ea925a821e599ed8f65bd02f3d6754144718f8724ef155177c38b9b79480",
+      "trianglesBefore": 2178,
+      "trianglesAfter": 980
+    }
+  ]
+}

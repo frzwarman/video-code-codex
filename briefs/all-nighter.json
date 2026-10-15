@@ -1,0 +1,141 @@
+{
+  "id": "all-nighter",
+  "title": "What Happens to Your Body When You Skip a Night of Sleep?",
+  "topic": "An hour-by-hour journey through acute sleep deprivation and recovery",
+  "platform": "shorts",
+  "duration": 65,
+  "fps": 60,
+  "category": "science",
+  "output": "mp4",
+  "style": "NIGHT SHIFT / INSIDE YOU EP 03. Navy, sodium amber, fluorescent dawn, alarm red. The film gets sleep-deprived: deterministic type wobble, RGB offsets, velocity blur, drifting level and three 8-frame microsleeps. Recovery snaps clean. No renders without explicit user direction.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 3.5,
+      "title": "24 HRS",
+      "description": "Full navy cover and sodium-lit silhouette; DRUNK? stamp; match the ending."
+    },
+    {
+      "start": 3.5,
+      "end": 8,
+      "title": "Hour by hour",
+      "description": "Clock spins and locks at sixteen hours awake."
+    },
+    {
+      "start": 8,
+      "end": 15,
+      "title": "Hour 16",
+      "description": "Licensed brain under amber light; symbolic adenosine accumulation."
+    },
+    {
+      "start": 15,
+      "end": 22,
+      "title": "Hour 19",
+      "description": "Lagging reaction test and performance-equivalent BAC gauge at 0.05%."
+    },
+    {
+      "start": 22,
+      "end": 28,
+      "title": "Microsleeps",
+      "description": "Three brief 8-frame blackouts, after-image label and exact matching audio dropouts."
+    },
+    {
+      "start": 28,
+      "end": 35,
+      "title": "Hour 24",
+      "description": "24 h, approximately 0.10% BAC task performance; qualified 0.08% threshold."
+    },
+    {
+      "start": 35,
+      "end": 42,
+      "title": "Next day",
+      "description": "35 h study context, semi-transparent brain and schematic bilateral amygdala signal; +60%."
+    },
+    {
+      "start": 42,
+      "end": 48,
+      "title": "Hunger",
+      "description": "Ghrelin arrow and original food pictograms; small-study context."
+    },
+    {
+      "start": 48,
+      "end": 54,
+      "title": "Coffee callback",
+      "description": "Reuse real caffeine molecule; block signal while adenosine particles remain."
+    },
+    {
+      "start": 54,
+      "end": 60,
+      "title": "Recovery",
+      "description": "Clean dawn lighting and type; clock resets to zero, recovery is not guaranteed complete."
+    },
+    {
+      "start": 60,
+      "end": 65,
+      "title": "Question + loop",
+      "description": "Uncluttered question; return to exact cover during final 0.5 s."
+    }
+  ],
+  "narration": [
+    {
+      "start": 0.08,
+      "end": 3.35,
+      "text": "An all-nighter can impair your reactions like alcohol."
+    },
+    {
+      "start": 3.58,
+      "end": 7.85,
+      "text": "Here’s what happens, hour by hour."
+    },
+    {
+      "start": 8.08,
+      "end": 14.85,
+      "text": "Hour sixteen. Adenosine has been building all day, increasing the pressure to sleep."
+    },
+    {
+      "start": 15.08,
+      "end": 21.85,
+      "text": "By seventeen to nineteen hours, some test performance resembles point zero five percent blood alcohol."
+    },
+    {
+      "start": 22.08,
+      "end": 27.85,
+      "text": "Microsleeps can happen: brief, involuntary sleep you might not even notice."
+    },
+    {
+      "start": 28.08,
+      "end": 34.85,
+      "text": "At twenty-four hours, one study found performance like point one percent blood alcohol. Above most US driving limits."
+    },
+    {
+      "start": 35.08,
+      "end": 41.85,
+      "text": "Through the next day: at thirty-five hours, one study found about sixty percent greater amygdala reactivity to negative images."
+    },
+    {
+      "start": 42.08,
+      "end": 47.85,
+      "text": "A small study also found higher ghrelin and hunger after one sleepless night."
+    },
+    {
+      "start": 48.08,
+      "end": 53.85,
+      "text": "Coffee blocks adenosine’s signal. The sleep pressure is still there."
+    },
+    {
+      "start": 54.08,
+      "end": 59.85,
+      "text": "Recovery sleep helps. One long night can restore alertness, but some effects take longer."
+    },
+    {
+      "start": 60.08,
+      "end": 64.35,
+      "text": "What’s the longest you’ve stayed awake? Tell me in the comments."
+    }
+  ],
+  "audio": {
+    "narration": null,
+    "music": "all-nighter/score.wav",
+    "effects": "all-nighter/effects.wav"
+  }
+}

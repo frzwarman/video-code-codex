@@ -1,0 +1,124 @@
+{
+  "id": "knuckle-crack",
+  "title": "Why Your Knuckles Crack",
+  "topic": "Gas cavity formation in finger joints",
+  "platform": "tiktok",
+  "duration": 62,
+  "fps": 60,
+  "category": "science",
+  "output": "mp4",
+  "style": "KINETIC LAB: oversized Inter 900, italic Libre Baskerville, paper/ink hard cuts, signal red accents, velocity-based horizontal blur, real rigged hand and anatomical bones. Full-frame opening and matching loop.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 3,
+      "title": "POP.",
+      "description": "Posed hands fill frame zero. Red POP, 0.4s impact and freeze."
+    },
+    {
+      "start": 3,
+      "end": 8,
+      "title": "Not your bones",
+      "description": "Paper-background anatomical hand bones. NOT YOUR BONES, red cross stamps."
+    },
+    {
+      "start": 8,
+      "end": 16,
+      "title": "Inside the joint",
+      "description": "Camera enters the real index MCP mesh. Capsule and synovial fluid labels."
+    },
+    {
+      "start": 16,
+      "end": 25,
+      "title": "Pressure drops",
+      "description": "Pulling finger insert, widening anatomical joint gap, dropping conceptual gauge."
+    },
+    {
+      "start": 25,
+      "end": 33,
+      "title": "The pop",
+      "description": "Cavity appears at exactly 25.5s; synchronized ring and pop. Formation, not bursting."
+    },
+    {
+      "start": 33,
+      "end": 41,
+      "title": "Caught on camera",
+      "description": "Explicitly labeled MRI-style reconstruction with 2015 / REAL-TIME MRI graphics and scan selection."
+    },
+    {
+      "start": 41,
+      "end": 48,
+      "title": "About twenty minutes",
+      "description": "Conceptual reset counter and shrinking cavity. A second attempt does not produce a crack."
+    },
+    {
+      "start": 48,
+      "end": 57,
+      "title": "The arthritis myth",
+      "description": "Paired posed hands; Unger one-person experiment. No arthritis reported in either hand; not proof."
+    },
+    {
+      "start": 57,
+      "end": 62,
+      "title": "Crack away",
+      "description": "Return to full hand macro, closing CTA, matching pose and typography at loop seam."
+    }
+  ],
+  "narration": [
+    {
+      "start": 0.05,
+      "end": 2.9,
+      "text": "That pop when you crack your knuckles?"
+    },
+    {
+      "start": 3.05,
+      "end": 4.6,
+      "text": "It’s not your bones."
+    },
+    {
+      "start": 4.7,
+      "end": 7.7,
+      "text": "Nothing is grinding, and nothing is snapping."
+    },
+    {
+      "start": 8.3,
+      "end": 15.5,
+      "text": "Each knuckle is a joint sealed inside a capsule of slippery fluid."
+    },
+    {
+      "start": 16.25,
+      "end": 24.6,
+      "text": "When you pull or bend it, the joint surfaces separate, and the pressure inside drops fast."
+    },
+    {
+      "start": 25.15,
+      "end": 32.5,
+      "text": "Gas dissolved in that fluid suddenly forms a bubble. That’s the pop."
+    },
+    {
+      "start": 33.25,
+      "end": 40.5,
+      "text": "In 2015, researchers watched it happen in real time inside an MRI scanner."
+    },
+    {
+      "start": 41.1,
+      "end": 47.7,
+      "text": "You can’t crack the same knuckle again right away. The reset takes about twenty minutes."
+    },
+    {
+      "start": 48.0,
+      "end": 56.75,
+      "text": "Does it cause arthritis? One doctor cracked only one hand for sixty years. Neither hand got arthritis. One person—not proof."
+    },
+    {
+      "start": 57.1,
+      "end": 61.35,
+      "text": "So crack away. Follow for what’s really happening inside you."
+    }
+  ],
+  "audio": {
+    "narration": "knuckle-crack/narration.wav",
+    "music": "knuckle-crack/score.wav",
+    "effects": "knuckle-crack/effects.wav"
+  }
+}

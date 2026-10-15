@@ -77,3 +77,7 @@ npm run check
 ```
 
 Metadata and decode checks complement visual review; they do not assess artistic pacing. Review the finished film with sound before publishing.
+
+## Showreel
+
+`npm run render -- showreel` produces `out/showreel/landscape-final.mp4`: 15 s, 1920 × 1080, 60 fps, 900 frames, H.264 BT.709 + AAC. Integrated loudness is −19.8 LUFS with a −1.1 dBFS peak, and full decode is clean. The score and effects are original 120 BPM synthesis from `node scripts/create-showreel-audio.mjs`, with impacts measured on every cut (0, 2, 4, 6, 7.5, 9.5, 11, 12.5 s). Source is in `src/videos/showreel/` (`kit.tsx` for velocity blur, wipes, HUD and grain; `Shots.tsx` for 2D shots; `Shots3D.tsx` for the chrome knot and the 6,000-point particle morph). The picture is designed on a 1920 × 1080 stage, so vertical and square formats letterbox it and have not been exported. Inspection: `out/showreel/stills-sheet.png`, `stills-sheet2.png` (cut points), `encoded-sheet.png` (from the MP4).

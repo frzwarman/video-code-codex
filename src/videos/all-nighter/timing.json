@@ -1,0 +1,7 @@
+{
+  "duration": 65,
+  "fps": 60,
+  "cuts": [0, 3.5, 8, 15, 22, 28, 35, 42, 48, 54, 60, 65],
+  "microsleeps": [{"frame":1392,"length":8},{"frame":1506,"length":8},{"frame":1614,"length":8}],
+  "loopCoverAt": 64.5
+}
