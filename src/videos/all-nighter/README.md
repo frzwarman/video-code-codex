@@ -37,7 +37,7 @@ The counter is editorial, not a physiological prediction. Blackouts, wobble, RGB
 
 The supplied prose was longer than its approximate word count and stated some results too generally. The revised script narrows the BAC analogy to test performance, qualifies the +60% response as one study of negative images, identifies the ghrelin study as small, and says recovery may take longer for some functions. 0.08% is labeled **most US states**, with Utah's 0.05% exception. The 17–19 h / 0.05%, 24 h / 0.10%, and approximately 35 h / +60% research framings remain.
 
-Narration is null. Record from the generated `narration.txt`, then align phrases to the existing cues as in message-journey. Current checks measure planned reading time only. No recorded speech exists to align. The existing AudioTracks lowers music from .85 to .38 when a narration path is supplied. Recheck the whole mix's peak after voice is added.
+Voice-over: the supplied recording `public/audio/all-nighter.wav` (24 kHz mono, 69.4 s) is fitted into the 65 s track `public/all-nighter/narration.wav`, and `audio.narration` points to it in both brief copies. Each line starts at its scene (or 0.3 s after the previous line ends). Pauses inside lines longer than 0.35 s are shortened to 0.35 s, and lines that still overflow get a pitch-preserving tempo of at most 1.07× (lines 1, 4, 6, 7, 8 and 10). Caption cues are retimed to the placed speech. Lines 6, 7 and 8 still run 0.7, 1.3 and 0.4 s past their scene cuts; scene choreography, microsleep frames and the score were left unchanged. Final mix: −17.5 LUFS, −4.1 dBFS sample peak. Speech-to-text on the encoded MP4 confirms every line at its placed time. Frames: `out/all-nighter/voiced-contact-sheet.png`.
 
 ## Checks that do not render video
 

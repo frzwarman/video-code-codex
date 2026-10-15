@@ -1,0 +1,130 @@
+{
+  "id": "yawn",
+  "title": "Try Not to Yawn: Why Yawns Are Contagious",
+  "topic": "Contagious yawning: reading triggers it, not oxygen, the brain-cooling idea, brain size and yawn length, social closeness, development",
+  "platform": "shorts",
+  "duration": 62,
+  "fps": 60,
+  "style": "LATE NIGHT: showreel grammar, one motion discipline per shot, slow lo-fi with hard cuts. Navy #0B1026, lavender #B9A7FF, peach #FFB38A, cream #FFF6EA, teal #6FE3D6. Signature motion: type that yawns (slow inhale stretch, hold, quick release). Series bug INSIDE YOU · EP 06.",
+  "category": "science",
+  "output": "mp4",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 3.5,
+      "title": "Try not to",
+      "description": "Frame 0 cover: a giant stretched YAWN. TRY NOT TO slams above it; the word inhales and releases."
+    },
+    {
+      "start": 3.5,
+      "end": 9,
+      "title": "Reading is enough",
+      "description": "A wall of the word yawn in many sizes; a yawn wave rolls through it. Yawn counter chip appears."
+    },
+    {
+      "start": 9,
+      "end": 16,
+      "title": "Not oxygen",
+      "description": "Lab cards: normal air vs pure oxygen, equal yawn bars, rising oxygen bubbles. Provine 1987."
+    },
+    {
+      "start": 16,
+      "end": 24,
+      "title": "Brain cooling",
+      "description": "CC0 brain with a thermal gradient that cools as an inhale stream of particles flows in."
+    },
+    {
+      "start": 24,
+      "end": 31,
+      "title": "Bigger brains, longer yawns",
+      "description": "Two stopwatches race: mouse under a second, human about six. Gallup et al. 2016, 19 species."
+    },
+    {
+      "start": 31,
+      "end": 39,
+      "title": "It spreads",
+      "description": "A grid of faces; a yawn propagates from one face outward until about half are yawning."
+    },
+    {
+      "start": 39,
+      "end": 46,
+      "title": "Family first",
+      "description": "Network of you, family, friends, strangers; transmission arcs are fastest and thickest to family."
+    },
+    {
+      "start": 46,
+      "end": 52,
+      "title": "Kids",
+      "description": "Age ruler 0–10; the catches-yawns switch flips around four to five."
+    },
+    {
+      "start": 52,
+      "end": 57,
+      "title": "Before birth",
+      "description": "Ultrasound-style sector scan with a stylized fetus that yawns."
+    },
+    {
+      "start": 57,
+      "end": 62,
+      "title": "Be honest",
+      "description": "HOW MANY TIMES DID YOU YAWN? counter, comment arrow, loop to cover."
+    }
+  ],
+  "narration": [
+    {
+      "start": 0.1,
+      "end": 2.43,
+      "text": "Try not to yawn while you watch this."
+    },
+    {
+      "start": 3.65,
+      "end": 7.42,
+      "text": "Too late? Just reading the word yawn can set some people off."
+    },
+    {
+      "start": 9.15,
+      "end": 14.33,
+      "text": "It's not about oxygen. When people breathed pure oxygen in a lab, they yawned just as much."
+    },
+    {
+      "start": 16.15,
+      "end": 23.27,
+      "text": "One leading idea: yawning cools your brain. That big gulp of air helps cool the blood heading to your head."
+    },
+    {
+      "start": 24.15,
+      "end": 30.54,
+      "text": "Animals with bigger brains yawn longer. A mouse yawns for under a second. You, about six."
+    },
+    {
+      "start": 31.15,
+      "end": 36.88,
+      "text": "And yawns spread. Roughly half of adults catch one just from seeing someone else yawn."
+    },
+    {
+      "start": 39.15,
+      "end": 44.14,
+      "text": "You catch them faster from family and friends than from strangers."
+    },
+    {
+      "start": 46.15,
+      "end": 50.15,
+      "text": "Young kids rarely catch yawns until about age four or five."
+    },
+    {
+      "start": 52.15,
+      "end": 54.52,
+      "text": "And babies already yawn in the womb."
+    },
+    {
+      "start": 57.05,
+      "end": 60.11,
+      "text": "So, how many times did you yawn? Be honest."
+    }
+  ],
+  "audio": {
+    "narration": "yawn/narration.wav",
+    "music": "yawn/score.wav",
+    "effects": "yawn/effects.wav"
+  }
+}

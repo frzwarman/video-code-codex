@@ -41,13 +41,13 @@ export const Label: React.FC<{n: number; text: string; t: number; at: number; co
 };
 
 /** Skewed panel that fully covers the frame exactly at `at`. */
-export const Wipe: React.FC<{t: number; at: number; color: string; angle?: number; span?: number}> = ({t, at, color, angle = 0, span = 0.36}) => {
+export const Wipe: React.FC<{t: number; at: number; color: string; angle?: number; span?: number; w?: number}> = ({t, at, color, angle = 0, span = 0.36, w = W}) => {
   const p = progress(t, at - span / 2, at + span / 2);
   if (p <= 0 || p >= 1) return null;
   const x = (f: number) => lerp(1.35, -1.35, f < 0.5 ? expoIn(f * 2) / 2 : 0.5 + expoOut(f * 2 - 1) / 2);
-  const xp = x(p); const v = (xp - x(progress(t - 1 / FPS, at - span / 2, at + span / 2))) * W;
+  const xp = x(p); const v = (xp - x(progress(t - 1 / FPS, at - span / 2, at + span / 2))) * w;
   return <AbsoluteFill style={{transform: `rotate(${angle}deg)`, pointerEvents: 'none'}}>
-    <Blur id={`wipe-${at}`} vx={v} k={0.25} style={{position: 'absolute', left: '50%', top: '-40%', width: W * 1.45, height: '180%', marginLeft: -W * 0.725, transform: `translateX(${xp * W}px) skewX(-12deg)`}}>
+    <Blur id={`wipe-${at}`} vx={v} k={0.25} style={{position: 'absolute', left: '50%', top: '-40%', width: w * 1.45, height: '180%', marginLeft: -w * 0.725, transform: `translateX(${xp * w}px) skewX(-12deg)`}}>
       <div style={{width: '100%', height: '100%', background: color}}/>
     </Blur>
   </AbsoluteFill>;
@@ -84,6 +84,6 @@ export const Hud: React.FC<{t: number; frame: number}> = ({t, frame}) => {
 };
 
 /** Seeded per-frame film grain. */
-export const Grain: React.FC<{frame: number; opacity?: number}> = ({frame, opacity = 0.07}) => <AbsoluteFill style={{opacity, mixBlendMode: 'overlay', pointerEvents: 'none'}}>
-  <svg width={W} height={H}><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={frame % 97} stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width={W} height={H} filter="url(#grain)"/></svg>
+export const Grain: React.FC<{frame: number; opacity?: number; w?: number; h?: number}> = ({frame, opacity = 0.07, w = W, h = H}) => <AbsoluteFill style={{opacity, mixBlendMode: 'overlay', pointerEvents: 'none'}}>
+  <svg width={w} height={h}><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={frame % 97} stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width={w} height={h} filter="url(#grain)"/></svg>
 </AbsoluteFill>;

@@ -51,7 +51,7 @@ export const Depth: React.FC<{t: number; quality: Quality}> = ({t, quality}) => 
   </AbsoluteFill>;
 };
 
-const useWordTargets = (word: string, n: number) => {
+export const useWordTargets = (word: string, n: number) => {
   const [handle] = useState(() => delayRender(`Sampling ${word}`));
   const [targets, setTargets] = useState<Float32Array | null>(null);
   useEffect(() => {
@@ -96,6 +96,7 @@ export const Particles: React.FC<{t: number; quality: Quality}> = ({t, quality})
       }
     }
     pos.needsUpdate = true;
+    geometry.computeBoundingSphere(); // bounds move with the points; stale bounds get the cloud culled
   }, [geometry, targets, s, n]);
   return <AbsoluteFill style={{background: `radial-gradient(circle at 50% 50%, #120f18, ${R.ink} 70%)`}}>
     <Stage quality={quality}>

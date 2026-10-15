@@ -1,0 +1,135 @@
+{
+  "id": "spicy-burn",
+  "title": "Why Spicy Food Feels Like It's Burning You",
+  "topic": "Capsaicin activates the TRPV1 heat receptor, so the brain reports fire at body temperature",
+  "platform": "shorts",
+  "duration": 62,
+  "fps": 60,
+  "style": "HEAT MAP: showreel grammar, one motion discipline per shot. Warm black #0B0607, chili red #FF2D1A, flame orange #FF8A00, yolk #FFD23F, milk #FFF7EC, cooling cyan #3EE0FF. Inter 900 kinetic type, italic serif asides, velocity blur, hard cuts on a 120 BPM grid. Series bug INSIDE YOU · EP 04.",
+  "category": "science",
+  "output": "mp4",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 3,
+      "title": "Not on fire",
+      "description": "Frame 0 cover: red field, giant ON FIRE?. YOUR MOUTH ISN'T slams in letter by letter with velocity blur."
+    },
+    {
+      "start": 3,
+      "end": 8,
+      "title": "It thinks it is",
+      "description": "Glossy 3D chili pepper under studio reflections, camera orbit, heat-shimmer type IT JUST THINKS IT IS."
+    },
+    {
+      "start": 8,
+      "end": 15,
+      "title": "Capsaicin",
+      "description": "Real PubChem capsaicin conformer assembles atom by atom. Variable-weight CAPSAICIN, formula C18H27NO3."
+    },
+    {
+      "start": 15,
+      "end": 24,
+      "title": "Heat sensor",
+      "description": "A grid of TRPV1 channels. A temperature dial reaches 43 °C and they open; then capsaicin docks at 37 °C and they open anyway."
+    },
+    {
+      "start": 24,
+      "end": 31,
+      "title": "False alarm",
+      "description": "Nerve signal particles race upward and assemble into the word FIRE. Alert UI: SENSOR 43 °C+ vs ACTUAL 37 °C."
+    },
+    {
+      "start": 31,
+      "end": 38,
+      "title": "Fake fire drill",
+      "description": "Gooey sweat drops, skin flush gradient, labels SWEAT · FLUSH · RUNNY NOSE."
+    },
+    {
+      "start": 38,
+      "end": 46,
+      "title": "Scoville",
+      "description": "Log-scale bar chart climbs from bell pepper to pure capsaicin with counters."
+    },
+    {
+      "start": 46,
+      "end": 53,
+      "title": "Milk beats water",
+      "description": "Split screen: water spreads red capsaicin dots; milk protein clusters capture them."
+    },
+    {
+      "start": 53,
+      "end": 58,
+      "title": "Birds don't care",
+      "description": "A flock crosses the frame dropping seeds; BIRDS CAN'T FEEL IT."
+    },
+    {
+      "start": 58,
+      "end": 62,
+      "title": "Your turn",
+      "description": "Closing question with comment arrow, then match-cut back to the frame-0 cover for a loop."
+    }
+  ],
+  "narration": [
+    {
+      "start": 0.1,
+      "end": 2.46,
+      "text": "Your mouth isn't actually on fire."
+    },
+    {
+      "start": 3.15,
+      "end": 5.07,
+      "text": "It just thinks it is."
+    },
+    {
+      "start": 8.15,
+      "end": 13.21,
+      "text": "Chili peppers contain capsaicin, a molecule that hijacks your heat sensors."
+    },
+    {
+      "start": 15.15,
+      "end": 21.47,
+      "text": "Those sensors, called TRPV1, normally fire when something hits about forty-three degrees Celsius."
+    },
+    {
+      "start": 21.52,
+      "end": 24.21,
+      "text": "Capsaicin switches them on at body temperature."
+    },
+    {
+      "start": 24.26,
+      "end": 26.96,
+      "text": "So your brain gets one message: fire."
+    },
+    {
+      "start": 31.15,
+      "end": 37.65,
+      "text": "Your body tries to cool a fire that isn't there. You sweat, you flush, your nose runs."
+    },
+    {
+      "start": 38.15,
+      "end": 45.18,
+      "text": "Heat is measured in Scoville units. A jalapeño reaches about eight thousand. The hottest peppers top two million."
+    },
+    {
+      "start": 46.15,
+      "end": 52.57,
+      "text": "Water just spreads capsaicin around. Milk works better: its proteins and fat pull it away."
+    },
+    {
+      "start": 53.15,
+      "end": 58.27,
+      "text": "And birds can't feel it at all, so they eat the peppers and spread the seeds."
+    },
+    {
+      "start": 58.32,
+      "end": 60.91,
+      "text": "What's the hottest thing you've ever eaten?"
+    }
+  ],
+  "audio": {
+    "narration": "spicy/narration.wav",
+    "music": "spicy/score.wav",
+    "effects": "spicy/effects.wav"
+  }
+}

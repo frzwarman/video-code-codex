@@ -170,6 +170,18 @@
       "type": "file"
     },
     {
+      "path": "out/spicy-burn/publish.md",
+      "accessCount": 2,
+      "lastAccessed": 1792055967469,
+      "type": "file"
+    },
+    {
+      "path": "out/spicy-burn/encoded-sheet.png",
+      "accessCount": 2,
+      "lastAccessed": 1792056615745,
+      "type": "file"
+    },
+    {
       "path": "out/review/mj-voiced-encoded.png",
       "accessCount": 1,
       "lastAccessed": 1791999171505,
@@ -239,6 +251,168 @@
       "path": "out/all-nighter/stills-sheet.png",
       "accessCount": 1,
       "lastAccessed": 1792052862561,
+      "type": "file"
+    },
+    {
+      "path": "out/all-nighter/voiced-contact-sheet.png",
+      "accessCount": 1,
+      "lastAccessed": 1792053180196,
+      "type": "file"
+    },
+    {
+      "path": "briefs/spicy-burn.json",
+      "accessCount": 1,
+      "lastAccessed": 1792055590467,
+      "type": "file"
+    },
+    {
+      "path": "scripts/create-spicy-audio.mjs",
+      "accessCount": 1,
+      "lastAccessed": 1792055640799,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/spicy-burn/look.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792055718862,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/spicy-burn/Shots3D.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792055765662,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/spicy-burn/Shots.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792055845749,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/spicy-burn/Video.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792055846346,
+      "type": "file"
+    },
+    {
+      "path": "out/spicy-burn/stills-sheet.png",
+      "accessCount": 1,
+      "lastAccessed": 1792055887849,
+      "type": "file"
+    },
+    {
+      "path": "out/spicy-burn/stills-fix.png",
+      "accessCount": 1,
+      "lastAccessed": 1792055927860,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/spicy-burn/README.md",
+      "accessCount": 1,
+      "lastAccessed": 1792055963114,
+      "type": "file"
+    },
+    {
+      "path": "briefs/music-body.json",
+      "accessCount": 1,
+      "lastAccessed": 1792057663816,
+      "type": "file"
+    },
+    {
+      "path": "scripts/create-music-body-audio.mjs",
+      "accessCount": 1,
+      "lastAccessed": 1792057730647,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/music-body/look.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792057809511,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/music-body/Shots3D.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792057809948,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/music-body/Shots.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792057878158,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/music-body/Video.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792057878501,
+      "type": "file"
+    },
+    {
+      "path": "out/music-body/stills-sheet.png",
+      "accessCount": 1,
+      "lastAccessed": 1792057912445,
+      "type": "file"
+    },
+    {
+      "path": "out/music-body/stills-fix.png",
+      "accessCount": 1,
+      "lastAccessed": 1792057942971,
+      "type": "file"
+    },
+    {
+      "path": "out/music-body/stills-fix2.png",
+      "accessCount": 1,
+      "lastAccessed": 1792057972447,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/music-body/README.md",
+      "accessCount": 1,
+      "lastAccessed": 1792057996958,
+      "type": "file"
+    },
+    {
+      "path": "out/music-body/encoded-sheet.png",
+      "accessCount": 1,
+      "lastAccessed": 1792058330116,
+      "type": "file"
+    },
+    {
+      "path": "briefs/yawn.json",
+      "accessCount": 1,
+      "lastAccessed": 1792058993469,
+      "type": "file"
+    },
+    {
+      "path": "scripts/create-yawn-audio.mjs",
+      "accessCount": 1,
+      "lastAccessed": 1792059035517,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/yawn/look.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792059149903,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/yawn/Shots.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792059150239,
+      "type": "file"
+    },
+    {
+      "path": "out/yawn/stills-sheet.png",
+      "accessCount": 1,
+      "lastAccessed": 1792059213984,
+      "type": "file"
+    },
+    {
+      "path": "out/yawn/stills-fix.png",
+      "accessCount": 1,
+      "lastAccessed": 1792059250027,
       "type": "file"
     }
   ],

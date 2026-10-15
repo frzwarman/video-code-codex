@@ -1,0 +1,130 @@
+{
+  "id": "music-body",
+  "title": "How Music Takes Control of Your Body",
+  "topic": "Music entrains movement, heart rate and breathing, triggers dopamine at peak moments, changes exercise and pain perception, and loops in your head",
+  "platform": "shorts",
+  "duration": 62,
+  "fps": 60,
+  "style": "LOUDNESS: showreel grammar, one motion discipline per shot, every visual driven by the real soundtrack (per-frame band analysis). Ink #0D0716, magenta #FF2E88, lime #C6FF3D, cyan #33E1FF, cream #FFF4E6, violet #7B5CFF. The score itself demonstrates each claim: tempo ramp, true silence, then a drop. Series bug INSIDE YOU · EP 05.",
+  "category": "science",
+  "output": "mp4",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 3,
+      "title": "This song",
+      "description": "Frame 0 cover: THIS SONG over audio-reactive EQ bars. IS CHANGING YOUR BODY slams in on the beat."
+    },
+    {
+      "start": 3,
+      "end": 8,
+      "title": "Foot tap",
+      "description": "3D woofer whose cone is driven by the real low-band energy. Beat flash and BPM readout."
+    },
+    {
+      "start": 8,
+      "end": 15,
+      "title": "Movement areas",
+      "description": "CC0 brain mesh; supplementary motor area and basal ganglia glow on each beat."
+    },
+    {
+      "start": 15,
+      "end": 23,
+      "title": "Tempo up",
+      "description": "Monitor UI: music tempo ramps 100→140 BPM while an illustrative heart trace and breath ring speed up."
+    },
+    {
+      "start": 23,
+      "end": 28,
+      "title": "Stop",
+      "description": "True silence. Inverted cream frame, STOP., heartbeat slows and dips below a dashed baseline. Riser into the drop."
+    },
+    {
+      "start": 28,
+      "end": 37,
+      "title": "Chills",
+      "description": "The drop: particles burst into CHILLS, then the real dopamine molecule spins up. DID YOU GET CHILLS?"
+    },
+    {
+      "start": 37,
+      "end": 44,
+      "title": "Run",
+      "description": "Beat grid with footprints landing on the beat lines; perceived effort bars."
+    },
+    {
+      "start": 44,
+      "end": 50,
+      "title": "Pain",
+      "description": "A jagged pain line melts into a smooth wave; LESS PAIN · LESS ANXIETY with citation."
+    },
+    {
+      "start": 50,
+      "end": 56,
+      "title": "Earworm",
+      "description": "A worm of music notes loops a figure-eight around a head silhouette; 9 IN 10 · WEEKLY."
+    },
+    {
+      "start": 56,
+      "end": 62,
+      "title": "Your chills",
+      "description": "WHICH SONG GIVES YOU CHILLS? over EQ bars, then match-cut to the cover for a loop."
+    }
+  ],
+  "narration": [
+    {
+      "start": 0.1,
+      "end": 3.6,
+      "text": "This song is changing your body right now."
+    },
+    {
+      "start": 3.65,
+      "end": 6.66,
+      "text": "Feel your foot? It's probably already tapping."
+    },
+    {
+      "start": 8.15,
+      "end": 13.45,
+      "text": "That's because your brain's movement areas fire to a beat, even when you're sitting still."
+    },
+    {
+      "start": 15.15,
+      "end": 20.01,
+      "text": "Speed up the music, and your heart rate and breathing tend to rise with it."
+    },
+    {
+      "start": 23.15,
+      "end": 27.3,
+      "text": "Stop it, and they fall. Sometimes below where they started."
+    },
+    {
+      "start": 28.15,
+      "end": 35.49,
+      "text": "And that shiver at the big moment? Your brain releases dopamine, the same reward chemical behind food and other pleasures."
+    },
+    {
+      "start": 37.15,
+      "end": 43.04,
+      "text": "Runners match their steps to the beat, and music can make exercise feel easier."
+    },
+    {
+      "start": 44.15,
+      "end": 49.5,
+      "text": "After surgery, patients who listened to music reported less pain and anxiety."
+    },
+    {
+      "start": 50.15,
+      "end": 55.32,
+      "text": "And that song stuck in your head? About nine in ten people get one every week."
+    },
+    {
+      "start": 56.15,
+      "end": 59.65,
+      "text": "Which song gives you chills? Tell me in the comments."
+    }
+  ],
+  "audio": {
+    "narration": "music-body/narration.wav",
+    "music": "music-body/score.wav",
+    "effects": "music-body/effects.wav"
+  }
+}
