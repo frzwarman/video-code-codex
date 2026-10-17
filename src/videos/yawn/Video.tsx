@@ -8,11 +8,13 @@ import {Flash, Grain, shake, Wipe} from '../showreel/kit';
 import {CaptionBar, Chrome, CUTS, VH, VW, Y} from './look';
 import {Contagion, Cta, Hook, Kids, Network, Oxygen, Stopwatch, Womb, WordWall} from './Shots';
 import {BrainCool} from './Shots3D';
+import {useGltf} from '../../three/useGltf';
 
 // Designed natively for 1080×1920; softer cuts and shake than the louder episodes to match the late-night mood.
 export const Video: React.FC<VideoProps> = (props) => {
   const t = useStoryTime(brief.duration); const frame = Math.round(t * 60);
   const {width, height} = useVideoConfig(); const fit = Math.min(width / VW, height / VH);
+  const brain = useGltf('coffee/brain.glb'); // loaded up front: the brain shot never mounts mid-load
   const loop = t >= 61.6;
   const shot = loop ? 0 : CUTS.findIndex((c, i) => t >= c && t < CUTS[i + 1]);
   const [sx, sy] = shake(t, [0, 3.5, 16, 31, 52], 6);
@@ -22,7 +24,7 @@ export const Video: React.FC<VideoProps> = (props) => {
         {shot === 0 && <Hook t={loop ? 0 : t}/>}
         {shot === 1 && <WordWall t={t}/>}
         {shot === 2 && <Oxygen t={t}/>}
-        {shot === 3 && <BrainCool t={t} quality={props.quality}/>}
+        {shot === 3 && brain && <BrainCool t={t} quality={props.quality} gltf={brain}/>}
         {shot === 4 && <Stopwatch t={t}/>}
         {shot === 5 && <Contagion t={t}/>}
         {shot === 6 && <Network t={t}/>}

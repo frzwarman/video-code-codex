@@ -81,3 +81,13 @@ Metadata and decode checks complement visual review; they do not assess artistic
 ## Showreel
 
 `npm run render -- showreel` produces `out/showreel/landscape-final.mp4`: 15 s, 1920 × 1080, 60 fps, 900 frames, H.264 BT.709 + AAC. Integrated loudness is −19.8 LUFS with a −1.1 dBFS peak, and full decode is clean. The score and effects are original 120 BPM synthesis from `node scripts/create-showreel-audio.mjs`, with impacts measured on every cut (0, 2, 4, 6, 7.5, 9.5, 11, 12.5 s). Source is in `src/videos/showreel/` (`kit.tsx` for velocity blur, wipes, HUD and grain; `Shots.tsx` for 2D shots; `Shots3D.tsx` for the chrome knot and the 6,000-point particle morph). The picture is designed on a 1920 × 1080 stage, so vertical and square formats letterbox it and have not been exported. Inspection: `out/showreel/stills-sheet.png`, `stills-sheet2.png` (cut points), `encoded-sheet.png` (from the MP4).
+
+## Glitch scan (run after every final render)
+
+`npm run validate` checks metadata only. `npm run scan -- out/<id>/<file>.mp4` decodes every frame and flags isolated one- and two-frame outliers: frames unlike both neighbours while the neighbours match each other. These are garbled or half-black Chrome captures, blank frames where a 3D model was still loading, and pops. Hard cuts are not flagged. Black runs are listed for review. The script exits 1 when it finds a glitch.
+
+Found and fixed on 2026-10-16:
+- Random capture glitches (a frame tiled into strips, or half-black) in all-nighter at 9.7 s and yawn at 29.5 s and 39.8 s. The code was fine; the frames are re-rendered. They appeared in renders made while another project was rendering on the same machine, so render one video at a time.
+- A black frame at the first frame of a GLB shot (music-body at 8.0 s, yawn at 16.0 s): `useLoader` suspended when the shot mounted mid-render. Those videos now load the model in the always-mounted root with `src/three/useGltf.ts` (delayRender until the model is in state) and pass it down. Prefer this over `useLoader` for any model in a shot that mounts mid-video.
+
+Intentional black frames: all-nighter's three 8-frame microsleeps (23.2, 25.1, 26.9 s), spicy-burn's ink wipe at 3.0 s and the showreel's grid start at 6.05 s. Deliberate still holds (knuckle-crack's three-frame impact holds and slow beats, all-nighter's cover, recovery clock and final question) are design, not freezes.

@@ -1,0 +1,212 @@
+{
+  "scope": "Source-only CPU mesh projection; no rendered or encoded frames, browser, WebGL, or visual QA",
+  "resolution": [
+    1080,
+    1920
+  ],
+  "fps": 60,
+  "method": "Every 60 fps frame in the listed intervals; actual production camera, pose, normalization and motion modules; real GLB vertices; cochlea triangles clipped including edge intersections.",
+  "safeRegionBasis": "Top 650 clears the largest settled title (cover ends at ~617); hero bottom 1300 clears the 1320–1350 chips/dials; middle bottom 1210 leaves room for labels at 1250; cochlea bottom 1310 clears its chip at 1350. Horizontal bounds follow copy margins.",
+  "checks": [
+    {
+      "scene": 0,
+      "name": "opening-headphones",
+      "interval": [
+        0,
+        2.7
+      ],
+      "frames": 162,
+      "bounds": {
+        "left": 251,
+        "top": 661.3,
+        "right": 828.2,
+        "bottom": 1249
+      },
+      "safeRegion": {
+        "left": 84,
+        "top": 650,
+        "right": 950,
+        "bottom": 1300
+      },
+      "extremeTimes": [
+        2.7,
+        2.7,
+        2.7,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "scene": 2,
+      "name": "middle-ear",
+      "interval": [
+        9,
+        14
+      ],
+      "frames": 300,
+      "bounds": {
+        "left": 363.7,
+        "top": 654.9,
+        "right": 711.2,
+        "bottom": 1197.6
+      },
+      "safeRegion": {
+        "left": 84,
+        "top": 650,
+        "right": 950,
+        "bottom": 1210
+      },
+      "extremeTimes": [
+        13.8,
+        13.8,
+        13.9,
+        13.8
+      ],
+      "passed": true
+    },
+    {
+      "scene": 3,
+      "name": "cochlea-cutaway",
+      "interval": [
+        14,
+        19
+      ],
+      "frames": 300,
+      "bounds": {
+        "left": 228.4,
+        "top": 654.4,
+        "right": 876.1,
+        "bottom": 1222.6
+      },
+      "safeRegion": {
+        "left": 84,
+        "top": 650,
+        "right": 950,
+        "bottom": 1310
+      },
+      "extremeTimes": [
+        19,
+        19,
+        19,
+        19
+      ],
+      "passed": true
+    },
+    {
+      "scene": 8,
+      "name": "lower-volume",
+      "interval": [
+        49,
+        57
+      ],
+      "frames": 480,
+      "bounds": {
+        "left": 228.5,
+        "top": 655.4,
+        "right": 838.8,
+        "bottom": 1249
+      },
+      "safeRegion": {
+        "left": 84,
+        "top": 650,
+        "right": 950,
+        "bottom": 1300
+      },
+      "extremeTimes": [
+        56.8,
+        56.6,
+        56.6,
+        49
+      ],
+      "passed": true
+    },
+    {
+      "scene": 9,
+      "name": "comment-prompt",
+      "interval": [
+        57,
+        62
+      ],
+      "frames": 300,
+      "bounds": {
+        "left": 212.1,
+        "top": 697.6,
+        "right": 770.5,
+        "bottom": 1254.7
+      },
+      "safeRegion": {
+        "left": 84,
+        "top": 650,
+        "right": 950,
+        "bottom": 1300
+      },
+      "extremeTimes": [
+        57,
+        57,
+        57,
+        62
+      ],
+      "passed": true
+    },
+    {
+      "scene": 10,
+      "name": "closing-and-loop",
+      "interval": [
+        62,
+        65
+      ],
+      "frames": 180,
+      "bounds": {
+        "left": 260,
+        "top": 661.9,
+        "right": 822.6,
+        "bottom": 1249
+      },
+      "safeRegion": {
+        "left": 84,
+        "top": 650,
+        "right": 950,
+        "bottom": 1300
+      },
+      "extremeTimes": [
+        62,
+        62,
+        62,
+        62
+      ],
+      "passed": true
+    }
+  ],
+  "loop": {
+    "firstFrame": 0,
+    "lastFrame": 3899,
+    "productPoseAndCameraEqual": true,
+    "visualEqualityUnverified": true
+  },
+  "passed": true,
+  "excluded": [
+    "Scene 0 at 2.7–4s: intentional macro approach into the earcup",
+    "Scene 1: intentional canal approach",
+    "Scenes 4–7: microscopic hair-cell sequence, outside this focused mesh-framing regression",
+    "Decorative acoustic halo, wave rings, callout leader lines, text motion/blur and shake; not included in mesh bounds"
+  ],
+  "limitations": [
+    "Geometry bounds do not prove visibility, lighting, material appearance, readability or overall visual quality.",
+    "The source-only check does not decode textures or inspect browser, rendered, or encoded output."
+  ],
+  "sources": {
+    "src/videos/telinga-volume/assets.ts": "8bde4950546f08b9a3a6e10b058645670300724701e211ae55d3bf695d9c8f08",
+    "src/videos/telinga-volume/camera.ts": "51fcdc12bbd32f5c9e76540e21ddd4b093c5250917d2439d76d1fed57d668668",
+    "src/videos/telinga-volume/timeline.ts": "dbc474a6fbdef5eb3ab7e6a8c9550496f6f09dd57640db58c8ab0207693faa6d",
+    "src/motion.ts": "7760e60285f86cec0eacb02ff4f3d2174928392b754ef6350c2a1a7fba7c411d",
+    "src/videos/telinga-volume/timing.json": "33e80d8ec26aca653b2472ee25b861cc7abb5032637d34ff1da95af41915f035",
+    "src/videos/telinga-volume/World.tsx": "73a6249bd2bb9a7ccaa348d7b9d7a7c9f1b61ae385e22e8c8eadf347c45cc5e9",
+    "src/videos/telinga-volume/Models.tsx": "6bc63ba593cfde7a0ab5838ca48e493461fe157a646acabae004c99bfc11f2d2",
+    "src/videos/telinga-volume/Video.tsx": "2062f3c70b0bf2907d5fb845d435a3d4701c81f917c8cab069baa85cf73a9ece",
+    "src/videos/telinga-volume/Graphics.tsx": "16a3de5ba9027551a6b7a1d57590cb709b91a7a93af4cb026f8f600f1b7125cf"
+  },
+  "assets": {
+    "public/telinga-volume/models/headphones.glb": "9b155e07acdb0ad845ddcf707367bfc4e7e1f478bbedc5fdfc6653dc7d7a033a",
+    "public/telinga-volume/models/inner-ear.glb": "87ff1fc0c1bec432bed9c3fe36ab31fb1421396ae798bf0bf3789757dad1c6f9"
+  }
+}

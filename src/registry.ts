@@ -3,18 +3,22 @@ import {Video as Video0} from './videos/all-nighter/Video';
 import brief0 from './videos/all-nighter/brief.json';
 import {Video as Video1} from './videos/coffee-effects/Video';
 import brief1 from './videos/coffee-effects/brief.json';
-import {Video as Video2} from './videos/knuckle-crack/Video';
-import brief2 from './videos/knuckle-crack/brief.json';
-import {Video as Video3} from './videos/message-journey/Video';
-import brief3 from './videos/message-journey/brief.json';
-import {Video as Video4} from './videos/music-body/Video';
-import brief4 from './videos/music-body/brief.json';
-import {Video as Video5} from './videos/showreel/Video';
-import brief5 from './videos/showreel/brief.json';
-import {Video as Video6} from './videos/spicy-burn/Video';
-import brief6 from './videos/spicy-burn/brief.json';
-import {Video as Video7} from './videos/yawn/Video';
-import brief7 from './videos/yawn/brief.json';
+import {Video as Video2} from './videos/hujan-kodok/Video';
+import brief2 from './videos/hujan-kodok/brief.json';
+import {Video as Video3} from './videos/knuckle-crack/Video';
+import brief3 from './videos/knuckle-crack/brief.json';
+import {Video as Video4} from './videos/message-journey/Video';
+import brief4 from './videos/message-journey/brief.json';
+import {Video as Video5} from './videos/music-body/Video';
+import brief5 from './videos/music-body/brief.json';
+import {Video as Video6} from './videos/showreel/Video';
+import brief6 from './videos/showreel/brief.json';
+import {Video as Video7} from './videos/spicy-burn/Video';
+import brief7 from './videos/spicy-burn/brief.json';
+import {Video as Video8} from './videos/telinga-volume/Video';
+import brief8 from './videos/telinga-volume/brief.json';
+import {Video as Video9} from './videos/yawn/Video';
+import brief9 from './videos/yawn/brief.json';
 export const videos = [
   {component: Video0, brief: brief0},
   {component: Video1, brief: brief1},
@@ -24,4 +28,6 @@ export const videos = [
   {component: Video5, brief: brief5},
   {component: Video6, brief: brief6},
   {component: Video7, brief: brief7},
+  {component: Video8, brief: brief8},
+  {component: Video9, brief: brief9},
 ];

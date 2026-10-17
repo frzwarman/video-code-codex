@@ -1,0 +1,23 @@
+{
+  "id": "hujan-kodok",
+  "title": "Hujan Turun — Lagu Anak (Kodok dan Payung)",
+  "topic": "Original Indonesian kids' sing-along about a little frog with an umbrella in the rain (original lyrics and melody)",
+  "platform": "youtube",
+  "duration": 15,
+  "fps": 30,
+  "style": "Soft clay-toy 3D: a procedural frog with a yellow umbrella, light-blue rainy sky, rounded hills, puddle ripples. Chunky outlined title type (yellow and white with a thick dark outline). Sing-along lyrics with a bouncing ball. 100 BPM, C major, ukulele, glockenspiel, claps, rain.",
+  "category": "education",
+  "output": "mp4",
+  "scenes": [
+    {"start": 0, "end": 2.4, "title": "Title", "description": "HUJAN TURUN title letters bounce in; the frog pops up under its umbrella; rain starts."},
+    {"start": 2.4, "end": 12, "title": "Sing-along", "description": "Four lines, one bar each, with syllable highlight and a bouncing ball; the frog bounces on the beat and hops on line three."},
+    {"start": 12, "end": 15, "title": "Splash", "description": "The frog jumps into the puddle, splash rings, MARI BERNYANYI! end card."}
+  ],
+  "narration": [
+    {"start": 2.4, "end": 4.8, "text": "Plik plok plik plok, hujan turun"},
+    {"start": 4.8, "end": 7.2, "text": "Katak kecil pakai payung"},
+    {"start": 7.2, "end": 9.6, "text": "Lompat lompat di genangan"},
+    {"start": 9.6, "end": 12.0, "text": "Mari bernyanyi bersama"}
+  ],
+  "audio": {"narration": null, "music": "hujan-kodok/score.wav", "effects": "hujan-kodok/effects.wav"}
+}

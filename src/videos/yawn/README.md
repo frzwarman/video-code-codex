@@ -25,7 +25,11 @@ npm run render -- yawn
 
 ## Voice-over
 
-`audio.narration` is null; captions carry the script (10 lines, ~150 words). Record calmly; a real yawn in the first line is a bonus. Align it to the cues like the other episodes.
+The supplied recording `public/audio/yawn.wav` (24 kHz mono, 50.4 s) is fitted into `public/yawn/narration.wav`, and `audio.narration` points to it in both brief copies. Every line starts at its cue at natural speed, with no tempo change. Pauses inside lines are capped at 0.35 s, including the dramatic pause before "gulp". Lines 5 and 6 ("…about six." / "And yawns spread…") ran together in the recording and were split at a −56 dB dip at 27.97 s. Captions are retimed to the speech. The recording says "breathe… yawn" in the present tense, while the caption keeps "breathed… yawned".
+
+## Verified delivery
+
+`out/yawn/vertical-final.mp4`: 1080×1920, 60 fps, 3,720 frames, 62 s. Validation and full decode passed. −17.6 LUFS, −3.8 dBFS peak. Speech-to-text on the encoded file places every line at its cue. Under music it once misheard the gap after "six" as "weeks"; the clean voice track confirms "about six" ends cleanly. Encoded frames: `out/yawn/encoded-sheet.png`.
 
 ## Sources
 

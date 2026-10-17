@@ -1,0 +1,17 @@
+{
+  "duration": 65,
+  "sampleRate": 48000,
+  "channels": 2,
+  "bpm": 120,
+  "narration": null,
+  "source": "Original deterministic synthesis; no samples",
+  "mixGains": {
+    "music": 0.85,
+    "effects": 0.7
+  },
+  "mixSamplePeakDbFS": -7.114437320446823,
+  "mixRmsDbFS": -24.543213833273725,
+  "peakLimitDbFS": -1,
+  "passed": true,
+  "note": "WAV source mix only. Encoded AAC and voice alignment remain pending user-authorized rendering."
+}

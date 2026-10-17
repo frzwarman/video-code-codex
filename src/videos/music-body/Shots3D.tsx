@@ -1,8 +1,8 @@
 import React, {useLayoutEffect, useMemo} from 'react';
-import {AbsoluteFill, staticFile} from 'remotion';
+import {AbsoluteFill} from 'remotion';
 import {ThreeCanvas} from '@remotion/three';
-import {useLoader, useThree} from '@react-three/fiber';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {useThree} from '@react-three/fiber';
+import type {GLTF} from 'three/addons/loaders/GLTFLoader.js';
 import {AdditiveBlending, Box3, BufferAttribute, BufferGeometry, Color, LatheGeometry, Mesh, MeshPhysicalMaterial, PMREMGenerator, Quaternion, Vector2, Vector3} from 'three';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import {lerp, progress, seeded} from '../../motion';
@@ -52,8 +52,8 @@ export const Speaker: React.FC<{t: number; quality: Quality}> = ({t, quality}) =
 };
 
 // 03 — CC0 brain; supplementary motor area and basal ganglia glow on the beat.
-export const Brain: React.FC<{t: number; quality: Quality}> = ({t, quality}) => {
-  const s = t - 8; const gltf = useLoader(GLTFLoader, staticFile('coffee/brain.glb'));
+export const Brain: React.FC<{t: number; quality: Quality; gltf: GLTF}> = ({t, quality, gltf}) => {
+  const s = t - 8;
   const brain = useMemo(() => {const root = gltf.scene.clone(true); root.updateMatrixWorld(true); const box = new Box3().setFromObject(root); const c = box.getCenter(new Vector3()), size = box.getSize(new Vector3()); root.position.sub(c); root.traverse((o) => {if (o instanceof Mesh) o.material = new MeshPhysicalMaterial({color: '#e9dcf5', roughness: 0.5, metalness: 0.05, transparent: true, opacity: 0.55, clearcoat: 0.2, depthWrite: false});}); return {root, scale: 4.2 / Math.max(size.x, size.y, size.z)};}, [gltf]);
   const pulse = beatPulse(t, 7); const a = 0.6 + s * 0.3;
   return <AbsoluteFill style={{background: `radial-gradient(circle at 50% 55%, #1c1033, ${M.ink} 70%)`}}>

@@ -1,0 +1,16 @@
+{
+  "scope": "Analisis WAV sumber, bukan MP4/AAC; belum ada narasi",
+  "method": "FFmpeg ebur128=peak=true, music 0.85 + effects 0.7, amix normalize=0",
+  "truePeakDbFS": -7.0,
+  "limitDbFS": -1,
+  "passed": true,
+  "integratedLoudnessLUFS": -23.2,
+  "loudnessRangeLU": 3.2,
+  "sourceSha256": {
+    "score": "98090275813b286e26bd88775b5b9d10a97251042f59b50f962b71df53fc9fa8",
+    "effects": "893364d3b167e0ed7fb19d1f7af944e7df10dcbe124883ef58d2a9c5a7b1a47c"
+  },
+  "videoRendered": false,
+  "voiceAligned": false,
+  "codeCheck": "TypeScript dan 5 tes npm run check lulus"
+}

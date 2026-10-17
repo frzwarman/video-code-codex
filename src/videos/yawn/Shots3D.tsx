@@ -1,8 +1,7 @@
 import React, {useLayoutEffect, useMemo} from 'react';
-import {AbsoluteFill, staticFile} from 'remotion';
+import {AbsoluteFill} from 'remotion';
 import {ThreeCanvas} from '@remotion/three';
-import {useLoader} from '@react-three/fiber';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import type {GLTF} from 'three/addons/loaders/GLTFLoader.js';
 import {AdditiveBlending, Box3, BufferAttribute, BufferGeometry, Color, Mesh, MeshPhysicalMaterial, Vector3} from 'three';
 import {lerp, progress, seeded} from '../../motion';
 import {CameraRig} from '../../three/Scenes';
@@ -13,9 +12,8 @@ import {Aside, Headline, Mono, VH, VW, Y, yawnEnv} from './look';
 const warm = new Color('#FF6B4A'); const cool = new Color(Y.teal);
 
 // 04 — CC0 brain shifts from warm to cool as an inhale stream flows up into it (schematic hypothesis).
-export const BrainCool: React.FC<{t: number; quality: Quality}> = ({t, quality}) => {
+export const BrainCool: React.FC<{t: number; quality: Quality; gltf: GLTF}> = ({t, quality, gltf}) => {
   const s = t - 16; const inhale = yawnEnv(t - 17.0, 2.6); const cooled = progress(t, 18.2, 21.5);
-  const gltf = useLoader(GLTFLoader, staticFile('coffee/brain.glb'));
   const brain = useMemo(() => {const root = gltf.scene.clone(true); root.updateMatrixWorld(true); const box = new Box3().setFromObject(root); const c = box.getCenter(new Vector3()), size = box.getSize(new Vector3()); root.position.sub(c); const mat = new MeshPhysicalMaterial({roughness: 0.45, clearcoat: 0.3, emissiveIntensity: 0.35}); root.traverse((o) => {if (o instanceof Mesh) o.material = mat;}); return {root, mat, scale: 4.0 / Math.max(size.x, size.y, size.z)};}, [gltf]);
   useLayoutEffect(() => {const c = warm.clone().lerp(cool, cooled); brain.mat.color.copy(c).lerp(new Color('#ffffff'), 0.25); brain.mat.emissive.copy(c);}, [brain, cooled]);
   const n = quality === 'final' ? 1600 : 800;

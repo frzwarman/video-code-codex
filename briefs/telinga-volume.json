@@ -1,0 +1,141 @@
+{
+  "id": "telinga-volume",
+  "title": "Musik Terlalu Keras: Apa yang Terjadi di Dalam Telingamu?",
+  "topic": "Perjalanan suara, sel rambut koklea, dan risiko paparan suara keras",
+  "platform": "shorts",
+  "duration": 65,
+  "fps": 60,
+  "category": "science",
+  "output": "mp4",
+  "style": "INSIDE YOU / Bahasa Indonesia. SOUND WITHIN: charcoal headphone product cinematography into CT-derived ear anatomy and stylized microscopic animation; ink #071316, pearl #F4F0E8, mint #37E8CC, coral #FF684C, acid #DDFB6A. Casual Indonesian, no forced slang. Continuous frame-driven cameras, licensed local product/anatomy GLBs plus original procedural microscopic illustrations, local fonts. User decides when to render; do not render automatically.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 4,
+      "title": "Volume mentok",
+      "description": "Cover penuh sejak frame 0: mesh headphone nisu dengan headband dan dua earcup terpisah, detail bantalan dan cahaya studio mint; FULL VOLUME? lalu dolly mendekati earcup."
+    },
+    {
+      "start": 4,
+      "end": 9,
+      "title": "Masuk ke telinga",
+      "description": "Match iris dari earcup ke daun telinga dan kanal pada model anatomi Innerscene. Kamera mengikuti front gelombang ilustratif menuju membran."
+    },
+    {
+      "start": 9,
+      "end": 14,
+      "title": "Tiga tulang kecil",
+      "description": "Close-up gendang dan tiga ossikel dari atlas CT SPL. Getaran diperjelas secara ilustratif; label mengikuti proyeksi 3D."
+    },
+    {
+      "start": 14,
+      "end": 19,
+      "title": "Rumah siput",
+      "description": "Reveal labirin bertulang dan koklea dari atlas CT SPL. Material dan jalur cahaya memberi akses ke struktur; cairan dan geraknya tetap ilustrasi, bukan data scan."
+    },
+    {
+      "start": 19,
+      "end": 27,
+      "title": "Jadi sinyal",
+      "description": "Hutan mikroskopis bundle stereosilia berbentuk V dengan tinggi bertingkat; travelling-wave, impuls ke serabut saraf."
+    },
+    {
+      "start": 27,
+      "end": 35,
+      "title": "Keras × lama",
+      "description": "Meter paparan ilustratif: KERAS × LAMA. Kamera makin mendekati bundle; pola tetap berirama tanpa menaikkan volume audio."
+    },
+    {
+      "start": 35,
+      "end": 43,
+      "title": "Struktur yang rapuh",
+      "description": "Bundle yang dipilih menjadi bengkok dan berkurang; perubahan berlangsung sebagai ilustrasi paparan, bukan simulasi cedera real-time."
+    },
+    {
+      "start": 43,
+      "end": 49,
+      "title": "Nggak ada undo",
+      "description": "Celah pada struktur tetap kosong. UNDO dicoret. Tidak ada sel yang tumbuh kembali pada shot berikutnya."
+    },
+    {
+      "start": 49,
+      "end": 57,
+      "title": "Tetap nikmatin musik",
+      "description": "Kembali ke mesh headphone, terpisah dari ilustrasi kerusakan; kamera mengitari earcup. Tiga aksi praktis: dial volume turun, jeda, noise cancelling tanpa klaim fitur produk tertentu."
+    },
+    {
+      "start": 57,
+      "end": 62,
+      "title": "Jujur, kamu?",
+      "description": "Pertanyaan dengan ruang kosong dan slider. Headphone bergeser untuk memberi ruang teks."
+    },
+    {
+      "start": 62,
+      "end": 65,
+      "title": "Lagu boleh diulang",
+      "description": "Tagline lalu geometri, cahaya, tipografi, grain dan pose kembali ke cover awal."
+    }
+  ],
+  "narration": [
+    {
+      "start": 0.12,
+      "end": 3.78,
+      "text": "Lagu favorit, volume mentok. Enak, sih. Tapi telingamu gimana?"
+    },
+    {
+      "start": 4.12,
+      "end": 8.78,
+      "text": "Suara masuk lewat liang telinga, terus bikin gendang telinga bergetar."
+    },
+    {
+      "start": 9.12,
+      "end": 13.78,
+      "text": "Tiga tulang kecil meneruskan getarannya ke koklea, alias rumah siput."
+    },
+    {
+      "start": 14.12,
+      "end": 18.78,
+      "text": "Di dalamnya ada cairan. Gerakannya membantu menggerakkan sel-sel sensorik."
+    },
+    {
+      "start": 19.12,
+      "end": 26.78,
+      "text": "Sel ini punya rambut superkecil. Saat menekuk, getaran diubah jadi sinyal ke otak. Baru deh, kedengaran."
+    },
+    {
+      "start": 27.12,
+      "end": 34.78,
+      "text": "Bukan cuma seberapa keras. Berapa lama kamu dengerin juga ngaruh. Makin keras, makin cepat risiko kerusakan naik."
+    },
+    {
+      "start": 35.12,
+      "end": 42.78,
+      "text": "Suara terlalu keras bisa merusak struktur ini. Telinga bisa berdenging, atau suara terasa mendem. Kerusakannya bisa permanen."
+    },
+    {
+      "start": 43.12,
+      "end": 48.78,
+      "text": "Sel rambut yang mati nggak tumbuh lagi. Nggak ada tombol undo."
+    },
+    {
+      "start": 49.12,
+      "end": 56.78,
+      "text": "Tetap nikmatin musiknya. Turunin volume, kasih jeda. Noise cancelling bantu supaya kamu nggak perlu ngelawan suara sekitar dengan volume tinggi."
+    },
+    {
+      "start": 57.12,
+      "end": 61.78,
+      "text": "Jujur, suka naikin volume pas bagian favorit? Tulis di komentar."
+    },
+    {
+      "start": 62.12,
+      "end": 64.55,
+      "text": "Soalnya, lagu boleh diulang..."
+    }
+  ],
+  "audio": {
+    "narration": null,
+    "music": "telinga-volume/score.wav",
+    "effects": "telinga-volume/effects.wav"
+  }
+}

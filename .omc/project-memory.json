@@ -414,6 +414,48 @@
       "accessCount": 1,
       "lastAccessed": 1792059250027,
       "type": "file"
+    },
+    {
+      "path": "out/yawn/encoded-sheet.png",
+      "accessCount": 1,
+      "lastAccessed": 1792060435682,
+      "type": "file"
+    },
+    {
+      "path": "briefs/hujan-kodok.json",
+      "accessCount": 1,
+      "lastAccessed": 1792061378692,
+      "type": "file"
+    },
+    {
+      "path": "scripts/create-hujan-kodok-audio.mjs",
+      "accessCount": 1,
+      "lastAccessed": 1792061427613,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/hujan-kodok/look.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792061494628,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/hujan-kodok/Frog.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792061494950,
+      "type": "file"
+    },
+    {
+      "path": "src/videos/hujan-kodok/Video.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1792061542229,
+      "type": "file"
+    },
+    {
+      "path": "out/hujan-kodok/stills-sheet.png",
+      "accessCount": 1,
+      "lastAccessed": 1792061572102,
+      "type": "file"
     }
   ],
   "userDirectives": []

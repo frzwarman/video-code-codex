@@ -1,0 +1,9 @@
+Headphones
+Author: nisu
+License: CC0 1.0 Universal
+Original listing: https://opengameart.org/content/headphones
+Download: https://opengameart.org/sites/default/files/headphones_0.zip
+License: https://creativecommons.org/publicdomain/zero/1.0/
+Verified 2026-10-16. Source listing saved beside this notice.
+
+This is an adapted asset. Original base-color and emissive branding maps are not included; a neutral charcoal material is used. Geometry was split along existing disconnected components, and original normal/roughness/metallic/AO maps were converted and reduced to 2K.

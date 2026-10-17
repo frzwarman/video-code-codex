@@ -1,0 +1,367 @@
+{
+  "version": 1,
+  "jobId": "9474ea73-55a3-4702-8dd1-c58c0636e2f1",
+  "sessionId": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+  "scopeKey": "97ab6303eca0e3848b7cc891b46445922f23f7a9b6c968e7d41a6b883c656b5e",
+  "revision": 61,
+  "createdAt": "2026-10-15T10:32:48.896Z",
+  "updatedAt": "2026-10-15T10:33:21.283Z",
+  "producerGraceExpiresAt": "2026-10-15T10:33:18.897Z",
+  "bestEffortDeadlineAt": "2026-10-15T10:34:11.897Z",
+  "producers": {
+    "core": {
+      "state": "sealed",
+      "intentKey": "f077a755e704f7046ce05fcfda6d498f0a5c212156ab1fcb911179375dd18639",
+      "payloadDigest": "f077a755e704f7046ce05fcfda6d498f0a5c212156ab1fcb911179375dd18639",
+      "sealedAt": "2026-10-15T10:33:19.510Z",
+      "sealedBy": "recovery"
+    },
+    "wiki": {
+      "state": "no-op",
+      "sealedAt": "2026-10-15T10:32:48.910Z",
+      "sealedBy": "wiki-producer"
+    }
+  },
+  "actions": {
+    "foreground-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "42e238af5c883e61253d1c72e477b9469da08d76cb26c1f050e1705f45d598c6",
+      "payload": {
+        "transcriptPath": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+        "cwd": "/Users/FarizsMBP/Documents/code-video",
+        "reason": "other",
+        "input": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "transcript_path": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+          "cwd": "/Users/FarizsMBP/Documents/code-video",
+          "scratchpad_dir": "/private/tmp/claude-501/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5/scratchpad",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "ended_at": "2026-10-15T10:33:19.316Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-10-15T10:33:19.050Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "cd0872cc-008e-43fb-b804-cb2ac00db4dd",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-15T10:33:28.994Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-15T10:33:19.497Z"
+    },
+    "wiki-capture": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "8d18f4cd78e37fb8cc12f2301c33b1b3f591eb85d39cebeab8ef26283e09e62f",
+      "payload": {
+        "transcriptPath": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+        "cwd": "/Users/FarizsMBP/Documents/code-video",
+        "reason": "other",
+        "input": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "transcript_path": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+          "cwd": "/Users/FarizsMBP/Documents/code-video",
+          "scratchpad_dir": "/private/tmp/claude-501/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5/scratchpad",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "completedAt": "2026-10-15T10:32:48.910Z"
+    },
+    "team-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "9c6bdbec7f29854116ca9316e1ec7efb28fe0448fb53c70b6fc9d3e56b78f80e",
+      "payload": {
+        "transcriptPath": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+        "cwd": "/Users/FarizsMBP/Documents/code-video",
+        "reason": "other",
+        "input": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "transcript_path": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+          "cwd": "/Users/FarizsMBP/Documents/code-video",
+          "scratchpad_dir": "/private/tmp/claude-501/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5/scratchpad",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "ended_at": "2026-10-15T10:33:19.316Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-10-15T10:33:19.540Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "b7739dc9-346a-4b2e-8c3f-ee050bded14c",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-15T10:33:28.994Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-15T10:33:19.761Z"
+    },
+    "python-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "63b9712facb9a9c4ef24e11c12303cc1f6dc490a0b9bb37e9f3cf455542d91b2",
+      "payload": {
+        "transcriptPath": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+        "cwd": "/Users/FarizsMBP/Documents/code-video",
+        "reason": "other",
+        "input": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "transcript_path": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+          "cwd": "/Users/FarizsMBP/Documents/code-video",
+          "scratchpad_dir": "/private/tmp/claude-501/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5/scratchpad",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "ended_at": "2026-10-15T10:33:19.316Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-10-15T10:33:19.788Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "f8412762-1044-4ac2-98a7-734f9ed4c2e4",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-15T10:33:28.994Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-15T10:33:20.025Z"
+    },
+    "reply-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "ddec1dc1a111e0827c4369b9ab1199f4006df8c48a0bcd555227bee20115ed23",
+      "payload": {
+        "transcriptPath": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+        "cwd": "/Users/FarizsMBP/Documents/code-video",
+        "reason": "other",
+        "input": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "transcript_path": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+          "cwd": "/Users/FarizsMBP/Documents/code-video",
+          "scratchpad_dir": "/private/tmp/claude-501/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5/scratchpad",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-10-15T10:33:20.048Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "d3c0b292-a397-4f9e-8f6b-abb0b33c0c65",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-15T10:33:28.994Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-15T10:33:20.293Z"
+    },
+    "callback": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "a919daf6e1384a6d18d7d8cb8e4dded0336675a506b0c29b959ac509e17224f0",
+      "payload": {
+        "transcriptPath": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+        "cwd": "/Users/FarizsMBP/Documents/code-video",
+        "reason": "other",
+        "input": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "transcript_path": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+          "cwd": "/Users/FarizsMBP/Documents/code-video",
+          "scratchpad_dir": "/private/tmp/claude-501/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5/scratchpad",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "ended_at": "2026-10-15T10:33:19.316Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-10-15T10:33:20.315Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "24a47312-3dc9-47df-9f2c-bafb2a78ba71",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-15T10:33:28.994Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-15T10:33:20.529Z"
+    },
+    "notification": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "d4ab766078923834208a650cfb3ebaa690ad0427ee359e0568da6f6bb416e171",
+      "payload": {
+        "transcriptPath": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+        "cwd": "/Users/FarizsMBP/Documents/code-video",
+        "reason": "other",
+        "input": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "transcript_path": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+          "cwd": "/Users/FarizsMBP/Documents/code-video",
+          "scratchpad_dir": "/private/tmp/claude-501/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5/scratchpad",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "ended_at": "2026-10-15T10:33:19.316Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-10-15T10:33:20.551Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "7040fbff-f9eb-4173-bb34-96e8b6077a8d",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-15T10:33:28.994Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-15T10:33:20.763Z"
+    },
+    "openclaw": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "67a28ec481a22531784e380bd159bfee8614e11b2f91e0dc4a931f2db1633a90",
+      "payload": {
+        "transcriptPath": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+        "cwd": "/Users/FarizsMBP/Documents/code-video",
+        "reason": "other",
+        "input": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "transcript_path": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+          "cwd": "/Users/FarizsMBP/Documents/code-video",
+          "scratchpad_dir": "/private/tmp/claude-501/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5/scratchpad",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "ended_at": "2026-10-15T10:33:19.316Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-10-15T10:33:20.789Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "27dc5b23-fca1-4726-a668-8185701143be",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-15T10:33:28.994Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-15T10:33:21.009Z"
+    },
+    "spawn-next": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "a4fdc59cbec3708c76da6c3cd0c230eef8960118b837742378d8303bab57a6eb",
+      "payload": {
+        "transcriptPath": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+        "cwd": "/Users/FarizsMBP/Documents/code-video",
+        "reason": "other",
+        "input": {
+          "session_id": "1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5",
+          "transcript_path": "/Users/FarizsMBP/.claude/projects/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5.jsonl",
+          "cwd": "/Users/FarizsMBP/Documents/code-video",
+          "scratchpad_dir": "/private/tmp/claude-501/-Users-FarizsMBP-Documents-code-video/1d1b9d71-0aaf-4c4a-a2bb-fcde00250fb5/scratchpad",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-10-15T10:33:21.031Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "5c2b8f5d-28a5-4e93-943c-c1af43fdbea0",
+        "phase": "terminal",
+        "deadlineAt": "2026-10-15T10:33:28.994Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-10-15T10:33:21.241Z"
+    }
+  },
+  "owner": null,
+  "phase": "complete",
+  "recoverableFailure": {
+    "reason": "actions-settled",
+    "releasedAt": "2026-10-15T10:33:21.262Z",
+    "ownerNonce": "02590a13-b122-486a-86e2-41d51db683e5"
+  },
+  "completion": {
+    "completedAt": "2026-10-15T10:33:21.262Z",
+    "terminalDigest": "02a17d2f01864fc52e64b69e6833f7d7d327783eda2810a9b75c3a167bc6dfaa",
+    "terminalRevision": 60
+  }
+}

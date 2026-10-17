@@ -1,0 +1,324 @@
+{
+  "title": "SPL Inner Ear Atlas — selected anatomy for Telinga Volume",
+  "sourcePage": "https://www.openanatomy.org/atlas-pages/atlas-spl-inner-ear.html",
+  "sourceArchive": "https://www.openanatomy.org/atlases/nac/inner-ear-2018-02.zip",
+  "sourceRelease": "February 2018",
+  "verifiedOn": "2026-10-16",
+  "authors": [
+    "Sonke Bartling (DKFZ)",
+    "Marianna Jakab (SPL)",
+    "Ron Kikinis (SPL)"
+  ],
+  "institutions": [
+    "German Cancer Research Center (DKFZ), Heidelberg",
+    "Surgical Planning Laboratory, Brigham and Women’s Hospital / Harvard Medical School, Boston"
+  ],
+  "method": "Human ear segmented from high-resolution flat-panel CT (source reports approximately 140 micrometre high-contrast resolution).",
+  "license": {
+    "name": "3D Slicer License Part B",
+    "url": "https://www.openanatomy.org/atlas-pages/slicer-license.html",
+    "localHtml": "licenses/spl-slicer-license.html",
+    "localText": "licenses/spl-slicer-license.txt",
+    "sourceSha256": "fb74b4753e822915adbe03ffae18e03529a669994ac2f58c45ceb981cc75c1da",
+    "commercialUse": "Permitted under the stated license conditions, including license preservation, attribution, modification disclosure and no endorsement implication."
+  },
+  "modifications": "Selected source meshes converted from VTK to GLB; semantic node names and editorial PBR materials. Original vertex coordinates and topology preserved. Source normal directions retained and lengths normalized by the exporter.",
+  "coordinateSystem": "RAS (+X right, +Y anterior, +Z superior). Wrap with rotation X=-PI/2 for Y-up.",
+  "coordinateUnits": "Unscaled source atlas units. Slicer convention is millimetres; no clinical dimension calibration is claimed.",
+  "geometryInMetres": false,
+  "anatomicalLimit": "Educational visualization of one segmented specimen. Editorial colors are not literal tissue colors. Not a diagnostic or dimensionally calibrated model.",
+  "reproduction": "node scripts/prepare-telinga-anatomy.mjs",
+  "output": {
+    "file": "inner-ear.glb",
+    "bytes": 1191432,
+    "sha256": "87ff1fc0c1bec432bed9c3fe36ab31fb1421396ae798bf0bf3789757dad1c6f9",
+    "meshes": 7,
+    "vertices": 24596,
+    "triangles": 49214,
+    "bounds": {
+      "min": [
+        -26.46811294555664,
+        -49.92673110961914,
+        -35.86991500854492
+      ],
+      "max": [
+        31.04913330078125,
+        7.395779132843018,
+        36.24412536621094
+      ],
+      "center": [
+        2.2905101776123047,
+        -21.26547598838806,
+        0.1871051788330078
+      ],
+      "size": [
+        57.51724624633789,
+        57.32251024246216,
+        72.11404037475586
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "Labyrinth",
+      "description": "CT-segmented bony labyrinth, including cochlea and semicircular canals",
+      "sourceUrl": "https://www.openanatomy.org/atlases/nac/inner-ear-2018-02/models/Model_10_Labyrinth.vtk",
+      "sourceBytes": 627586,
+      "sourceSha256": "d0a5940d35d084263618cbf8f3ede048e2e93616e2f684b1ca54f6e132c6db5c",
+      "vertices": 11179,
+      "triangles": 22446,
+      "bounds": {
+        "min": [
+          -10.92740249633789,
+          -45.026939392089844,
+          -21.904848098754883
+        ],
+        "max": [
+          16.374767303466797,
+          7.395779132843018,
+          36.24412536621094
+        ],
+        "center": [
+          2.723682403564453,
+          -18.815580129623413,
+          7.169638633728027
+        ],
+        "size": [
+          27.302169799804688,
+          52.42271852493286,
+          58.14897346496582
+        ]
+      }
+    },
+    {
+      "name": "Malleus",
+      "description": "Malleus (hammer)",
+      "sourceUrl": "https://www.openanatomy.org/atlases/nac/inner-ear-2018-02/models/Model_140_Malleus_Bone.vtk",
+      "sourceBytes": 119479,
+      "sourceSha256": "09b0f86f72c5dd0da5719f26f2652758b13614bf6f361315b14f3827729f373f",
+      "vertices": 2132,
+      "triangles": 4260,
+      "bounds": {
+        "min": [
+          8.577749252319336,
+          -19.89689064025879,
+          -19.49867057800293
+        ],
+        "max": [
+          31.04913330078125,
+          -11.709628105163574,
+          3.1232333183288574
+        ],
+        "center": [
+          19.813441276550293,
+          -15.803259372711182,
+          -8.187718629837036
+        ],
+        "size": [
+          22.471384048461914,
+          8.187262535095215,
+          22.621903896331787
+        ]
+      }
+    },
+    {
+      "name": "Incus",
+      "description": "Incus (anvil)",
+      "sourceUrl": "https://www.openanatomy.org/atlases/nac/inner-ear-2018-02/models/Model_14_Incus_Bone.vtk",
+      "sourceBytes": 100943,
+      "sourceSha256": "538b9692d27bf66457efc4efdcf75aec1781a2d92f82343f4dc43e12611832a9",
+      "vertices": 1801,
+      "triangles": 3598,
+      "bounds": {
+        "min": [
+          9.48045539855957,
+          -16.27727699279785,
+          -11.873575210571289
+        ],
+        "max": [
+          29.61307144165039,
+          1.2714934349060059,
+          5.1218109130859375
+        ],
+        "center": [
+          19.54676342010498,
+          -7.502891778945923,
+          -3.375882148742676
+        ],
+        "size": [
+          20.13261604309082,
+          17.548770427703857,
+          16.995386123657227
+        ]
+      }
+    },
+    {
+      "name": "Stapes",
+      "description": "Stapes (stirrup)",
+      "sourceUrl": "https://www.openanatomy.org/atlases/nac/inner-ear-2018-02/models/Model_17_Stapes_Bone.vtk",
+      "sourceBytes": 152781,
+      "sourceSha256": "6b22ca62d3d6e2a1bab66b95020ee9129e4bbb9966c34fa09fab49fdcd542d95",
+      "vertices": 2728,
+      "triangles": 5448,
+      "bounds": {
+        "min": [
+          1.571660041809082,
+          -21.362028121948242,
+          -8.686200141906738
+        ],
+        "max": [
+          10.967555046081543,
+          -11.225175857543945,
+          0.725933849811554
+        ],
+        "center": [
+          6.2696075439453125,
+          -16.293601989746094,
+          -3.980133146047592
+        ],
+        "size": [
+          9.395895004272461,
+          10.136852264404297,
+          9.412133991718292
+        ]
+      }
+    },
+    {
+      "name": "TympanicMembrane",
+      "description": "Tympanic membrane (eardrum)",
+      "sourceUrl": "https://www.openanatomy.org/atlases/nac/inner-ear-2018-02/models/Model_4_Tympanic_Membrane.vtk",
+      "sourceBytes": 136783,
+      "sourceSha256": "6f2ca904e256cadc9e2172e0d7b6c13f1da7957c9604b483633f78e6b8b3080e",
+      "vertices": 2441,
+      "triangles": 4878,
+      "bounds": {
+        "min": [
+          0.8818786144256592,
+          -24.014162063598633,
+          -35.86991500854492
+        ],
+        "max": [
+          25.22435188293457,
+          1.7449671030044556,
+          -11.886896133422852
+        ],
+        "center": [
+          13.053115248680115,
+          -11.134597480297089,
+          -23.878405570983887
+        ],
+        "size": [
+          24.34247326850891,
+          25.75912916660309,
+          23.98301887512207
+        ]
+      }
+    },
+    {
+      "name": "OsseousSpiralLamina",
+      "description": "Osseous spiral lamina, internal bony support within the cochlea",
+      "sourceUrl": "https://www.openanatomy.org/atlases/nac/inner-ear-2018-02/models/Model_23_Osseous_Spiral_Lamina.vtk",
+      "sourceBytes": 158911,
+      "sourceSha256": "63142c483b1f8ecfcd6b0e51c8cd3af4aff57044f5ef0bb7147d0adae241e635",
+      "vertices": 2847,
+      "triangles": 5652,
+      "bounds": {
+        "min": [
+          -5.216078758239746,
+          -42.96715545654297,
+          -18.93463706970215
+        ],
+        "max": [
+          6.766303062438965,
+          -17.28571891784668,
+          -1.1841953992843628
+        ],
+        "center": [
+          0.7751121520996094,
+          -30.126437187194824,
+          -10.059416234493256
+        ],
+        "size": [
+          11.982381820678711,
+          25.68143653869629,
+          17.750441670417786
+        ]
+      }
+    },
+    {
+      "name": "CochlearNerve",
+      "description": "Cochlear nerve",
+      "sourceUrl": "https://www.openanatomy.org/atlases/nac/inner-ear-2018-02/models/Model_9_Cochlear_Nerve.vtk",
+      "sourceBytes": 82295,
+      "sourceSha256": "5b1b3cb3bb037ae544c1b27bea6e2ad821b3ece75551a8e7bda307ace706b543",
+      "vertices": 1468,
+      "triangles": 2932,
+      "bounds": {
+        "min": [
+          -26.46811294555664,
+          -49.92673110961914,
+          -9.909063339233398
+        ],
+        "max": [
+          3.55252742767334,
+          -32.32799530029297,
+          0.9337037801742554
+        ],
+        "center": [
+          -11.45779275894165,
+          -41.127363204956055,
+          -4.4876797795295715
+        ],
+        "size": [
+          30.02064037322998,
+          17.598735809326172,
+          10.842767119407654
+        ]
+      }
+    }
+  ],
+  "sourceCameraExamples": {
+    "coordinateSystem": "Source RAS. Apply the same X=-PI/2 transform to positions, targets and up vectors when normalizing to Y-up.",
+    "lateral": {
+      "position": [
+        258.492,
+        -33.2149,
+        -1.42439
+      ],
+      "target": [
+        -10.3149,
+        -33.2149,
+        -1.42439
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    "oblique": {
+      "position": [
+        79.0662,
+        66.6027,
+        -98.8453
+      ],
+      "target": [
+        -10.3149,
+        -33.2149,
+        -1.42439
+      ],
+      "up": [
+        0.612689,
+        0.198095,
+        0.765095
+      ]
+    },
+    "source": "HighRes-EarAtlas-2018-02-16-Scene.mrml camera nodes from the downloadable atlas"
+  },
+  "checks": {
+    "finitePositionAndNormalComponents": true,
+    "validTriangleIndices": true,
+    "topologyUnmodified": true,
+    "rendererExecuted": false
+  }
+}

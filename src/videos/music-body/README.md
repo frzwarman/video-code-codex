@@ -29,7 +29,9 @@ If the score changes, rerun the script before rendering so `analysis.json` match
 
 ## Voice-over
 
-`audio.narration` is null; captions carry the script (10 lines, ~150 words). Record, then align lines to cues as for the other episodes. Note: with narration, AudioTracks ducks music to .38, so `analysis.json` (computed at .85) will look slightly more energetic than the ducked mix; that is acceptable for visuals, or regenerate with the ducked gain.
+The supplied recording `public/audio/music-body.wav` (24 kHz mono, 55.2 s) is fitted into `public/music-body/narration.wav`, and `audio.narration` points to it in both brief copies. Each line starts at its cue, and pauses inside lines are capped at 0.35 s. Only line 1 is sped up (1.065×). "Stop it, and they fall…" plays at 23.20–26.95 s, inside the musical silence, and "And that shiver at the big moment?" starts at 28.20 s, right on the drop. Captions are retimed to the speech. `analysis.json` still reflects the undocked music (.85); visuals stay energetic under the voice by design.
+
+Check by ear: in line 1, "body" is spoken quickly. Speech-to-text reads it as "body" on the clean voice track but as other words under the music, and on the raw recording. If it sounds unclear, re-record "your body" with a firmer "d".
 
 ## Sources
 
@@ -45,4 +47,4 @@ Heart-rate numbers on screen are illustrative of the direction of the effect, no
 
 ## Verified delivery
 
-`out/music-body/vertical-final.mp4`: 1080×1920, 60 fps, 3,720 frames, 62 s, H.264 BT.709 + stereo AAC. Validation and full decode passed. −19.0 LUFS, −1.9 dBFS peak (no narration yet). Particle-region brightness was measured across 28–32 s: CHILLS is present on every sampled frame. Encoded frames: `out/music-body/encoded-sheet.png`.
+`out/music-body/vertical-final.mp4`: 1080×1920, 60 fps, 3,720 frames, 62 s, H.264 BT.709 + stereo AAC. Validation and full decode passed. With voice: −18.1 LUFS, −3.6 dBFS peak. Speech-to-text on the encoded MP4 places every line inside its cue. Particle-region brightness was measured across 28–32 s: CHILLS is present on every sampled frame. Encoded frames: `out/music-body/encoded-sheet.png`.

@@ -1,0 +1,86 @@
+{
+  "title": "Headphones",
+  "author": "nisu",
+  "sourcePage": "https://opengameart.org/content/headphones",
+  "sourceDownload": "https://opengameart.org/sites/default/files/headphones_0.zip",
+  "sourcePublished": "2020-11-15",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "verifiedOn": "2026-10-16",
+  "licenseEvidence": "The original OpenGameArt listing credits nisu and explicitly lists CC0. The source author links their collection at 3dmodelscc0.com. No login or purchase was required for the linked archive.",
+  "sourceArchiveSha256": "e87193bc220644c17ebff7c4476ad423a798fddfad95510666ad831f143ce28a",
+  "sourceObjSha256": "095ee10974d937be87bc56f4f132e46ebc65426deb692dcb8da6d7894ce424ce",
+  "output": "headphones.glb",
+  "outputSha256": "9b155e07acdb0ad845ddcf707367bfc4e7e1f478bbedc5fdfc6653dc7d7a033a",
+  "outputBytes": 6454764,
+  "triangles": 3324,
+  "vertices": 9972,
+  "materials": 1,
+  "textures": [
+    {
+      "name": "OpenGL normal",
+      "size": 2048
+    },
+    {
+      "name": "Ambient occlusion / roughness / metallic",
+      "size": 2048
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Right_Earcup",
+      "translation": [
+        0.11445017721915493,
+        -0.005867819287533763,
+        0
+      ],
+      "triangles": 1060
+    },
+    {
+      "name": "Left_Earcup",
+      "translation": [
+        -0.1144492199876552,
+        -0.005867819287533763,
+        0
+      ],
+      "triangles": 1060
+    },
+    {
+      "name": "Headband",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "triangles": 1204
+    }
+  ],
+  "axes": {
+    "x": "left/right earcups",
+    "y": "up toward headband",
+    "z": "front/back depth"
+  },
+  "bounds": {
+    "min": [
+      -0.1371845467426161,
+      -0.12,
+      -0.05148142178061596
+    ],
+    "max": [
+      0.1371845467426161,
+      0.12,
+      0.05148142178061596
+    ]
+  },
+  "scale": "Presentation scale: assembled height 0.24 units, approximately metres. This is an estimate; source OBJ has no declared unit.",
+  "modifications": "OBJ converted to GLB; physical islands split into movable headband and earcups; estimated presentation height 0.24m; 4K maps reduced to 2K; DirectX normals converted to OpenGL; ORM channels packed; source logo/albedo/emission maps omitted, neutral charcoal factor assigned.",
+  "conversionCommand": "node scripts/convert-telinga-headphones.mjs /path/to/unzipped/Headphones",
+  "verification": {
+    "sourcePreviewInspected": true,
+    "geometryAndTextureStructureChecked": true,
+    "compositionRendered": false,
+    "geometryLoader": "Three.js GLTFLoader.parseAsync passed in Node with texture decoding stubbed (no WebGL rendering)",
+    "textureHeaders": "2 embedded PNG images, both 2048×2048; all buffer ranges valid; no external URI dependencies"
+  },
+  "credit": "Headphones by nisu — https://opengameart.org/content/headphones — CC0 1.0. Converted, split into movable components, textures optimized and material recolored."
+}

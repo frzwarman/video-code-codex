@@ -1,0 +1,293 @@
+{
+  "scope": "Source and source audio only; no browser, rendering, visual or encoded-output review",
+  "duration": 65,
+  "fps": 60,
+  "plannedFrames": 3900,
+  "sceneCount": 11,
+  "narrationWords": 133,
+  "cues": [
+    {
+      "scene": 1,
+      "words": 9,
+      "plannedWpm": 148
+    },
+    {
+      "scene": 2,
+      "words": 10,
+      "plannedWpm": 129
+    },
+    {
+      "scene": 3,
+      "words": 10,
+      "plannedWpm": 129
+    },
+    {
+      "scene": 4,
+      "words": 9,
+      "plannedWpm": 116
+    },
+    {
+      "scene": 5,
+      "words": 16,
+      "plannedWpm": 125
+    },
+    {
+      "scene": 6,
+      "words": 17,
+      "plannedWpm": 133
+    },
+    {
+      "scene": 7,
+      "words": 17,
+      "plannedWpm": 133
+    },
+    {
+      "scene": 8,
+      "words": 11,
+      "plannedWpm": 117
+    },
+    {
+      "scene": 9,
+      "words": 20,
+      "plannedWpm": 157
+    },
+    {
+      "scene": 10,
+      "words": 10,
+      "plannedWpm": 129
+    },
+    {
+      "scene": 11,
+      "words": 4,
+      "plannedWpm": 99
+    }
+  ],
+  "geometry": {
+    "hairCellApical": {
+      "vertices": 225,
+      "triangles": 384
+    },
+    "stereocilium": {
+      "vertices": 81,
+      "triangles": 128
+    }
+  },
+  "assets": {
+    "headphones": {
+      "file": "headphones.glb",
+      "bytes": 6454764,
+      "sha256": "9b155e07acdb0ad845ddcf707367bfc4e7e1f478bbedc5fdfc6653dc7d7a033a",
+      "meshes": 3,
+      "vertices": 9972,
+      "triangles": 3324,
+      "semanticNodes": [
+        "Headband",
+        "Left_Earcup",
+        "Right_Earcup"
+      ],
+      "bounds": {
+        "min": [
+          -0.1371845467426161,
+          -0.12,
+          -0.05148142178061596
+        ],
+        "max": [
+          0.1371845467426161,
+          0.12,
+          0.05148142178061596
+        ]
+      },
+      "embeddedImages": [
+        {
+          "name": "OpenGL_normal_2K",
+          "width": 2048,
+          "height": 2048,
+          "bitDepth": 8,
+          "colorType": 2,
+          "bytes": 2544491,
+          "crcAndCompressedScanlinesValid": true
+        },
+        {
+          "name": "AO_roughness_metallic_2K",
+          "width": 2048,
+          "height": 2048,
+          "bitDepth": 8,
+          "colorType": 2,
+          "bytes": 3587403,
+          "crcAndCompressedScanlinesValid": true
+        }
+      ],
+      "externalDependencies": 0,
+      "loaderPassed": true,
+      "textureBindingsOmittedForNodeValidation": true
+    },
+    "outer": {
+      "file": "outer-ear.glb",
+      "bytes": 337356,
+      "sha256": "fd9ca30ac00ac20c40c19cf51d9c7c3aa14425d4df5067968093fcf882f3f417",
+      "meshes": 16,
+      "vertices": 7312,
+      "triangles": 14584,
+      "semanticNodes": [
+        "Anterior semicircular canal",
+        "Anterior semicircular canal ampulla",
+        "Auditory nerve stump",
+        "Auditory tube schematic continuation",
+        "Cochlea with two and three-quarter spiral turns",
+        "External auditory canal with superior teaching cut",
+        "Incus",
+        "Lateral semicircular canal",
+        "Lateral semicircular canal ampulla",
+        "Malleus attached to tympanic membrane",
+        "Posterior semicircular canal",
+        "Posterior semicircular canal ampulla",
+        "Right auricle with helix antihelix concha tragus and lobule",
+        "Stapes arch and oval-window footplate",
+        "Tympanic membrane",
+        "Vestibule"
+      ],
+      "bounds": {
+        "min": [
+          -0.026848511770367622,
+          0,
+          -0.015271438285708427
+        ],
+        "max": [
+          0.026848511770367622,
+          0.06499999761581421,
+          0.015271438285708427
+        ]
+      },
+      "embeddedImages": [],
+      "externalDependencies": 0,
+      "loaderPassed": true,
+      "textureBindingsOmittedForNodeValidation": false
+    },
+    "inner": {
+      "file": "inner-ear.glb",
+      "bytes": 1191432,
+      "sha256": "87ff1fc0c1bec432bed9c3fe36ab31fb1421396ae798bf0bf3789757dad1c6f9",
+      "meshes": 7,
+      "vertices": 24596,
+      "triangles": 49214,
+      "semanticNodes": [
+        "CochlearNerve",
+        "Incus",
+        "Labyrinth",
+        "Malleus",
+        "OsseousSpiralLamina",
+        "Stapes",
+        "TympanicMembrane"
+      ],
+      "bounds": {
+        "min": [
+          -26.46811294555664,
+          -49.92673110961914,
+          -35.86991500854492
+        ],
+        "max": [
+          31.04913330078125,
+          7.395779132843018,
+          36.24412536621094
+        ]
+      },
+      "embeddedImages": [],
+      "externalDependencies": 0,
+      "loaderPassed": true,
+      "textureBindingsOmittedForNodeValidation": false
+    }
+  },
+  "normalizedAnatomy": {
+    "headphones": {
+      "parts": 3,
+      "bounds": {
+        "min": [
+          -0.13718454539775848,
+          -0.1199999984819442,
+          -0.051481422036886215
+        ],
+        "max": [
+          0.13718454539775848,
+          0.11999999405816197,
+          0.051481422036886215
+        ]
+      },
+      "allVerticesMatchAbsoluteTransform": true,
+      "sourceGeometryUnmodified": true
+    },
+    "outer": {
+      "parts": 16,
+      "bounds": {
+        "min": [
+          -0.5885719060897827,
+          -1.300000011920929,
+          -2.2924256324768066
+        ],
+        "max": [
+          0.9385719299316406,
+          1.949999988079071,
+          0.3924255892634392
+        ]
+      },
+      "allVerticesMatchAbsoluteTransform": true,
+      "sourceGeometryUnmodified": true
+    },
+    "middle": {
+      "parts": 7,
+      "bounds": {
+        "min": [
+          -2.802724599838257,
+          -1.5746338367462158,
+          -3.0577041804790497
+        ],
+        "max": [
+          1.3244962096214294,
+          3.6175770461559296,
+          1.083537608385086
+        ]
+      },
+      "allVerticesMatchAbsoluteTransform": true,
+      "sourceGeometryUnmodified": true
+    },
+    "cochlea": {
+      "parts": 7,
+      "bounds": {
+        "min": [
+          -2.079030990600586,
+          -2.710102289915085,
+          -2.8605387061834335
+        ],
+        "max": [
+          3.9398326873779297,
+          4.861871838569641,
+          3.1787721514701843
+        ]
+      },
+      "allVerticesMatchAbsoluteTransform": true,
+      "sourceGeometryUnmodified": true
+    }
+  },
+  "anchorChecks": {
+    "eardrumInsideTympanicMembraneBounds": true,
+    "ossiclesInsideIncusBounds": true
+  },
+  "licenseDocuments": [
+    "headphones-license.txt",
+    "headphones-source-evidence.txt",
+    "headphones-provenance.json",
+    "outer-ear-provenance.json",
+    "inner-ear-provenance.json",
+    "licenses/spl-slicer-license.html",
+    "licenses/spl-slicer-license.txt"
+  ],
+  "assetValidationLimit": "Headphones geometry parsed from an in-memory copy with image/texture bindings removed. Original embedded PNG dimensions, CRCs, zlib scanline data and filters validated. No browser image decoder, GPU texture sampling, material appearance, lighting or camera framing was tested.",
+  "captionCharacters": 99,
+  "narration": null,
+  "audioFrames": 3900,
+  "pending": [
+    "User decision to render",
+    "Visual framing, materials, transitions and motion review",
+    "Voice recording and actual alignment",
+    "Preview, cover, final MP4, encoded frames and AAC peak checks"
+  ]
+}

@@ -8,11 +8,13 @@ import {Flash, Grain, shake, Wipe} from '../showreel/kit';
 import {beatPulse, CaptionBar, Chrome, CUTS, M, VH, VW} from './look';
 import {Cta, Earworm, Hook, Monitor, Pain, Run, Stop} from './Shots';
 import {Brain, Chills, Speaker} from './Shots3D';
+import {useGltf} from '../../three/useGltf';
 
 // Designed natively for 1080×1920; every pulse comes from the analysed soundtrack.
 export const Video: React.FC<VideoProps> = (props) => {
   const t = useStoryTime(brief.duration); const frame = Math.round(t * 60);
   const {width, height} = useVideoConfig(); const fit = Math.min(width / VW, height / VH);
+  const brain = useGltf('coffee/brain.glb'); // loaded up front: the brain shot never mounts mid-load
   const loop = t >= 61.6;
   const shot = loop ? 0 : CUTS.findIndex((c, i) => t >= c && t < CUTS[i + 1]);
   const silent = t >= 23 && t < 27;
@@ -23,7 +25,7 @@ export const Video: React.FC<VideoProps> = (props) => {
       <AbsoluteFill style={{transform: `translate(${sx}px, ${sy}px) scale(${bump})`}}>
         {shot === 0 && <Hook t={loop ? 0 : t}/>}
         {shot === 1 && <Speaker t={t} quality={props.quality}/>}
-        {shot === 2 && <Brain t={t} quality={props.quality}/>}
+        {shot === 2 && brain && <Brain t={t} quality={props.quality} gltf={brain}/>}
         {shot === 3 && <Monitor t={t}/>}
         {shot === 4 && <Stop t={t}/>}
         {shot === 5 && <Chills t={t} quality={props.quality}/>}

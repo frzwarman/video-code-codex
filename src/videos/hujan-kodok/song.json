@@ -1,0 +1,328 @@
+{
+ "bpm": 100,
+ "bar": 2.4,
+ "syllables": [
+  {
+   "line": 0,
+   "i": 0,
+   "text": "Plik",
+   "wordStart": true,
+   "t": 2.4,
+   "midi": 67
+  },
+  {
+   "line": 0,
+   "i": 1,
+   "text": "plok",
+   "wordStart": true,
+   "t": 2.7,
+   "midi": 64
+  },
+  {
+   "line": 0,
+   "i": 2,
+   "text": "plik",
+   "wordStart": true,
+   "t": 3,
+   "midi": 67
+  },
+  {
+   "line": 0,
+   "i": 3,
+   "text": "plok,",
+   "wordStart": true,
+   "t": 3.3,
+   "midi": 64
+  },
+  {
+   "line": 0,
+   "i": 4,
+   "text": "hu",
+   "wordStart": true,
+   "t": 3.6,
+   "midi": 65
+  },
+  {
+   "line": 0,
+   "i": 5,
+   "text": "jan",
+   "wordStart": false,
+   "t": 3.9,
+   "midi": 64
+  },
+  {
+   "line": 0,
+   "i": 6,
+   "text": "tu",
+   "wordStart": true,
+   "t": 4.2,
+   "midi": 62
+  },
+  {
+   "line": 0,
+   "i": 7,
+   "text": "run",
+   "wordStart": false,
+   "t": 4.5,
+   "midi": 60
+  },
+  {
+   "line": 1,
+   "i": 0,
+   "text": "Ka",
+   "wordStart": true,
+   "t": 4.8,
+   "midi": 62
+  },
+  {
+   "line": 1,
+   "i": 1,
+   "text": "tak",
+   "wordStart": false,
+   "t": 5.1,
+   "midi": 67
+  },
+  {
+   "line": 1,
+   "i": 2,
+   "text": "ke",
+   "wordStart": true,
+   "t": 5.4,
+   "midi": 67
+  },
+  {
+   "line": 1,
+   "i": 3,
+   "text": "cil",
+   "wordStart": false,
+   "t": 5.7,
+   "midi": 69
+  },
+  {
+   "line": 1,
+   "i": 4,
+   "text": "pa",
+   "wordStart": true,
+   "t": 6,
+   "midi": 71
+  },
+  {
+   "line": 1,
+   "i": 5,
+   "text": "kai",
+   "wordStart": false,
+   "t": 6.3,
+   "midi": 69
+  },
+  {
+   "line": 1,
+   "i": 6,
+   "text": "pa",
+   "wordStart": true,
+   "t": 6.6,
+   "midi": 67
+  },
+  {
+   "line": 1,
+   "i": 7,
+   "text": "yung",
+   "wordStart": false,
+   "t": 6.9,
+   "midi": 62
+  },
+  {
+   "line": 2,
+   "i": 0,
+   "text": "Lom",
+   "wordStart": true,
+   "t": 7.2,
+   "midi": 72
+  },
+  {
+   "line": 2,
+   "i": 1,
+   "text": "pat",
+   "wordStart": false,
+   "t": 7.5,
+   "midi": 69
+  },
+  {
+   "line": 2,
+   "i": 2,
+   "text": "lom",
+   "wordStart": true,
+   "t": 7.8,
+   "midi": 72
+  },
+  {
+   "line": 2,
+   "i": 3,
+   "text": "pat",
+   "wordStart": false,
+   "t": 8.1,
+   "midi": 69
+  },
+  {
+   "line": 2,
+   "i": 4,
+   "text": "di",
+   "wordStart": true,
+   "t": 8.4,
+   "midi": 67
+  },
+  {
+   "line": 2,
+   "i": 5,
+   "text": "ge",
+   "wordStart": true,
+   "t": 8.7,
+   "midi": 65
+  },
+  {
+   "line": 2,
+   "i": 6,
+   "text": "nang",
+   "wordStart": false,
+   "t": 9,
+   "midi": 69
+  },
+  {
+   "line": 2,
+   "i": 7,
+   "text": "an",
+   "wordStart": false,
+   "t": 9.3,
+   "midi": 65
+  },
+  {
+   "line": 3,
+   "i": 0,
+   "text": "Ma",
+   "wordStart": true,
+   "t": 9.6,
+   "midi": 67
+  },
+  {
+   "line": 3,
+   "i": 1,
+   "text": "ri",
+   "wordStart": false,
+   "t": 9.9,
+   "midi": 67
+  },
+  {
+   "line": 3,
+   "i": 2,
+   "text": "ber",
+   "wordStart": true,
+   "t": 10.2,
+   "midi": 69
+  },
+  {
+   "line": 3,
+   "i": 3,
+   "text": "nya",
+   "wordStart": false,
+   "t": 10.5,
+   "midi": 71
+  },
+  {
+   "line": 3,
+   "i": 4,
+   "text": "nyi",
+   "wordStart": false,
+   "t": 10.8,
+   "midi": 72
+  },
+  {
+   "line": 3,
+   "i": 5,
+   "text": "ber",
+   "wordStart": true,
+   "t": 11.1,
+   "midi": 71
+  },
+  {
+   "line": 3,
+   "i": 6,
+   "text": "sa",
+   "wordStart": false,
+   "t": 11.4,
+   "midi": 74
+  },
+  {
+   "line": 3,
+   "i": 7,
+   "text": "ma",
+   "wordStart": false,
+   "t": 11.7,
+   "midi": 72
+  }
+ ],
+ "beats": [
+  0,
+  0.6,
+  1.2,
+  1.8,
+  2.4,
+  3,
+  3.6,
+  4.2,
+  4.8,
+  5.4,
+  6,
+  6.6,
+  7.2,
+  7.8,
+  8.4,
+  9,
+  9.6,
+  10.2,
+  10.8,
+  11.4,
+  12,
+  12.6
+ ],
+ "lines": [
+  [
+   "Plik",
+   "plok",
+   "plik",
+   "plok,",
+   "hu",
+   "jan",
+   "tu",
+   "run"
+  ],
+  [
+   "Ka",
+   "tak",
+   "ke",
+   "cil",
+   "pa",
+   "kai",
+   "pa",
+   "yung"
+  ],
+  [
+   "Lom",
+   "pat",
+   "lom",
+   "pat",
+   "di",
+   "ge",
+   "nang",
+   "an"
+  ],
+  [
+   "Ma",
+   "ri",
+   "ber",
+   "nya",
+   "nyi",
+   "ber",
+   "sa",
+   "ma"
+  ]
+ ]
+}

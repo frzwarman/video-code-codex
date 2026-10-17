@@ -1,0 +1,338 @@
+{
+  "title": "Ear anatomy model",
+  "author": "Innerscene; source page credits adaptation from MakeHuman/MPFB CC0 assets",
+  "source": "https://www.innerscene.com/tools/library/3d-parts/ear-anatomy-model-6b89b9e8",
+  "download": "https://www.innerscene.com/api/library/ear-anatomy-model-6b89b9e8/download",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "licenseEvidence": "Source page states public domain (CC0), commercial use permitted. Original GLB root extras also specify license CC0-1.0 and original_design true.",
+  "sourceSha256": "c473293309e047adec8879458cbdb014d0977f6c1d71657cd25e4e3e3cd1d08a",
+  "sourceBytes": 8403484,
+  "derivedFile": "outer-ear.glb",
+  "derivedSha256": "fd9ca30ac00ac20c40c19cf51d9c7c3aa14425d4df5067968093fcf882f3f417",
+  "derivedBytes": 337356,
+  "modifications": "Original mesh vertices/topology preserved. Texture payloads removed, materials restyled for film.",
+  "scope": "Authored anatomical teaching mesh, not a clinical scan. Inner-ear close-ups use a separate CT-derived SPL atlas.",
+  "parts": [
+    {
+      "name": "Anterior semicircular canal",
+      "anatomicalId": "anterior_semicircular_canal",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.021536357700824738,
+            0.031069999560713768,
+            0.0006892233504913747
+          ],
+          "boundsMax": [
+            -0.011680686846375465,
+            0.04092134162783623,
+            0.0015492233214899898
+          ],
+          "vertices": 424,
+          "triangles": 848
+        }
+      ]
+    },
+    {
+      "name": "Anterior semicircular canal ampulla",
+      "anatomicalId": "anterior_semicircular_canal_ampulla",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.015841614454984665,
+            0.03098161146044731,
+            0.00031922332709655166
+          ],
+          "boundsMax": [
+            -0.014241614378988743,
+            0.03258161246776581,
+            0.0019192233448848128
+          ],
+          "vertices": 66,
+          "triangles": 128
+        }
+      ]
+    },
+    {
+      "name": "Auditory nerve stump",
+      "anatomicalId": "auditory_nerve_stump",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.026848511770367622,
+            0.02772432379424572,
+            -0.0016418208833783865
+          ],
+          "boundsMax": [
+            -0.01754329353570938,
+            0.0305191557854414,
+            0.002039230428636074
+          ],
+          "vertices": 152,
+          "triangles": 300
+        }
+      ]
+    },
+    {
+      "name": "Auditory tube schematic continuation",
+      "anatomicalId": "auditory_tube_schematic_continuation",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.014639358967542648,
+            0.010596955195069313,
+            0.0017618435667827725
+          ],
+          "boundsMax": [
+            -0.0035205259919166565,
+            0.02565705217421055,
+            0.014176065102219582
+          ],
+          "vertices": 242,
+          "triangles": 480
+        }
+      ]
+    },
+    {
+      "name": "Cochlea with two and three-quarter spiral turns",
+      "anatomicalId": "cochlea_with_two_and_three_quarter_spiral_turns",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.02235359512269497,
+            0.0219581201672554,
+            0.0018832881469279528
+          ],
+          "boundsMax": [
+            -0.016220878809690475,
+            0.02968088909983635,
+            0.010987628251314163
+          ],
+          "vertices": 1272,
+          "triangles": 2540
+        }
+      ]
+    },
+    {
+      "name": "External auditory canal with superior teaching cut",
+      "anatomicalId": "external_auditory_canal_with_superior_teaching_cut",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.006734955590218306,
+            0.022387271746993065,
+            -0.0012159718899056315
+          ],
+          "boundsMax": [
+            0.019217977300286293,
+            0.03107137233018875,
+            0.008218960836529732
+          ],
+          "vertices": 707,
+          "triangles": 1414
+        }
+      ]
+    },
+    {
+      "name": "Incus",
+      "anatomicalId": "incus",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.012520622462034225,
+            0.029275886714458466,
+            0.0008523247088305652
+          ],
+          "boundsMax": [
+            -0.008058521896600723,
+            0.0333000011742115,
+            0.003619223367422819
+          ],
+          "vertices": 223,
+          "triangles": 442
+        }
+      ]
+    },
+    {
+      "name": "Lateral semicircular canal",
+      "anatomicalId": "lateral_semicircular_canal",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.020836664363741875,
+            0.029069999232888222,
+            -0.006903347559273243
+          ],
+          "boundsMax": [
+            -0.012380379252135754,
+            0.029929999262094498,
+            0.0015492233214899898
+          ],
+          "vertices": 424,
+          "triangles": 848
+        }
+      ]
+    },
+    {
+      "name": "Lateral semicircular canal ampulla",
+      "anatomicalId": "lateral_semicircular_canal_ampulla",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.01608535647392273,
+            0.028699999675154686,
+            0.0000814180530142039
+          ],
+          "boundsMax": [
+            -0.014485355466604233,
+            0.030300000682473183,
+            0.0016814180416986346
+          ],
+          "vertices": 66,
+          "triangles": 128
+        }
+      ]
+    },
+    {
+      "name": "Malleus attached to tympanic membrane",
+      "anatomicalId": "malleus_attached_to_tympanic_membrane",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.00830852147191763,
+            0.02494855783879757,
+            0.0022692233324050903
+          ],
+          "boundsMax": [
+            -0.005642683710902929,
+            0.03355000168085098,
+            0.003969223238527775
+          ],
+          "vertices": 209,
+          "triangles": 414
+        }
+      ]
+    },
+    {
+      "name": "Posterior semicircular canal",
+      "anatomicalId": "posterior_semicircular_canal",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.01703852228820324,
+            0.031069999560713768,
+            -0.006108480039983988
+          ],
+          "boundsMax": [
+            -0.016178522258996964,
+            0.04152081534266472,
+            0.00434692669659853
+          ],
+          "vertices": 424,
+          "triangles": 848
+        }
+      ]
+    },
+    {
+      "name": "Posterior semicircular canal ampulla",
+      "anatomicalId": "posterior_semicircular_canal_ampulla",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.017408521845936775,
+            0.03100038506090641,
+            -0.0033521445002406836
+          ],
+          "boundsMax": [
+            -0.015808522701263428,
+            0.03260038420557976,
+            -0.0017521445406600833
+          ],
+          "vertices": 66,
+          "triangles": 128
+        }
+      ]
+    },
+    {
+      "name": "Right auricle with helix antihelix concha tragus and lobule",
+      "anatomicalId": "right_auricle_with_helix_antihelix_concha_tragus_and_lobule",
+      "primitives": [
+        {
+          "boundsMin": [
+            0.015291035175323486,
+            0,
+            -0.015271438285708427
+          ],
+          "boundsMax": [
+            0.026848511770367622,
+            0.06499999761581421,
+            0.015271438285708427
+          ],
+          "vertices": 2150,
+          "triangles": 4300
+        }
+      ]
+    },
+    {
+      "name": "Stapes arch and oval-window footplate",
+      "anatomicalId": "stapes_arch_and_oval_window_footplate",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.015328521840274334,
+            0.028950000181794167,
+            -0.00024761835811659694
+          ],
+          "boundsMax": [
+            -0.012188522145152092,
+            0.030050000175833702,
+            0.0024860650300979614
+          ],
+          "vertices": 431,
+          "triangles": 862
+        }
+      ]
+    },
+    {
+      "name": "Tympanic membrane",
+      "anatomicalId": "tympanic_membrane",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.005948522128164768,
+            0.02319999970495701,
+            -0.0005307766841724515
+          ],
+          "boundsMax": [
+            -0.005468521732836962,
+            0.03180000185966492,
+            0.006769223138689995
+          ],
+          "vertices": 258,
+          "triangles": 512
+        }
+      ]
+    },
+    {
+      "name": "Vestibule",
+      "anatomicalId": "vestibule",
+      "primitives": [
+        {
+          "boundsMin": [
+            -0.018158521503210068,
+            0.027000000700354576,
+            -0.0013807766372337937
+          ],
+          "boundsMax": [
+            -0.01505852211266756,
+            0.03200000151991844,
+            0.003619223367422819
+          ],
+          "vertices": 198,
+          "triangles": 392
+        }
+      ]
+    }
+  ]
+}
